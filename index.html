@@ -14,14 +14,13 @@
         th { background: #eee; padding: 8px; font-size: 11px; text-align: center; color: #003366; }
         input[type="text"], input[type="number"], textarea { width: 98%; border: none; outline: none; background: transparent; font-size: 11px; color: #000; }
         
-        /* Estilo para os Checkboxes */
         .checkbox-container { display: flex; align-items: center; gap: 5px; cursor: pointer; }
         .checkbox-container input { width: auto; margin: 0; }
 
         .autocomplete-wrapper { position: relative; overflow: visible !important; }
         .suggestions { 
             position: absolute; background: white; border: 2px solid #333; 
-            width: 180%; z-index: 99999; max-height: 250px; overflow-y: auto; 
+            width: 100%; z-index: 99999; max-height: 250px; overflow-y: auto; 
             box-shadow: 5px 5px 15px rgba(0,0,0,0.3); display: none; left: 0; top: 100%;
         }
         .suggestion-item { padding: 8px 12px; cursor: pointer; border-bottom: 1px solid #eee; color: #000; text-align: left; }
@@ -133,30 +132,11 @@
     <table>
         <thead>
             <tr>
-                <th style="width: 65%;">Descrição (Busca Global: termo % termo)</th>
-                <th>Qtd</th>
-                <th>Cód Gold</th>
+                <th style="width: 85%;">Descrição da Peça (Busca Global: termo % termo)</th>
+                <th style="width: 15%;">Qtd</th>
             </tr>
         </thead>
         <tbody id="tabela-pecas"></tbody>
-    </table>
-
-    <div class="section">RESUMO DE MÃO DE OBRA</div>
-    <table>
-        <tbody>
-            <tr><td>DESMONTAGEM DO EQUIPAMENTO</td><td><input type="number" class="hr-input" oninput="calcularTotal()"></td><td>SVG1192</td></tr>
-            <tr><td>DESCONTAMINACAO DE PECAS</td><td><input type="number" class="hr-input" oninput="calcularTotal()"></td><td>SVG1193</td></tr>
-            <tr><td>ANALISE E PERITAGEM EM PECAS</td><td><input type="number" class="hr-input" oninput="calcularTotal()"></td><td>SVG1194</td></tr>
-            <tr><td>MONTAGEM E AJUSTE DE FOLGAS</td><td><input type="number" class="hr-input" oninput="calcularTotal()"></td><td>SVG1210</td></tr>
-            <tr><td>TESTES FINAIS DO EQUIPAMENTO</td><td><input type="number" class="hr-input" oninput="calcularTotal()"></td><td>SVG1200</td></tr>
-        </tbody>
-        <tfoot>
-            <tr style="background:#f2f2f2; font-weight:bold;">
-                <td style="text-align: right; padding-right: 15px;">TOTAL DE HORAS TÉCNICAS:</td>
-                <td id="total-horas" style="text-align: center; color: #ed1c24; font-size: 14px;">0</td>
-                <td></td>
-            </tr>
-        </tfoot>
     </table>
 
     <div class="section">CONCLUSÕES</div>
@@ -211,15 +191,13 @@
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td class="autocomplete-wrapper">
-                    <input type="text" class="input-nome-peca" placeholder="Busca global...">
+                    <input type="text" class="input-nome-peca" placeholder="Busca global de peças...">
                     <div class="suggestions"></div>
                 </td>
                 <td><input type="number" value="1" style="text-align:center;" oninput="this.setAttribute('value', this.value)"></td>
-                <td><input type="text" class="cod-gold" readonly style="text-align:center;"></td>
             `;
             const input = tr.querySelector('.input-nome-peca');
             const sugestoes = tr.querySelector('.suggestions');
-            const codInput = tr.querySelector('.cod-gold');
 
             input.addEventListener('input', function() {
                 const busca = this.value.toLowerCase();
@@ -237,12 +215,16 @@
                     filtrados.forEach(p => {
                         const div = document.createElement('div');
                         div.className = 'suggestion-item';
-                        div.innerText = `${p[21]} | ${p[22]}`;
+                        div.innerText = p[22]; // Apenas o nome da peça
                         div.onclick = () => {
-                            input.value = p[22]; input.setAttribute('value', p[22]);
-                            codInput.value = p[21]; codInput.setAttribute('value', p[21]);
+                            input.value = p[22]; 
+                            input.setAttribute('value', p[22]);
                             sugestoes.style.display = 'none';
-                            if (tr === document.querySelector('#tabela-pecas tr:last-child')) criarLinhaPeca();
+                            // Sempre verifica se é a última linha e abre uma nova
+                            const todasLinhas = document.querySelectorAll('#tabela-pecas tr');
+                            if (tr === todasLinhas[todasLinhas.length - 1]) {
+                                criarLinhaPeca();
+                            }
                         };
                         sugestoes.appendChild(div);
                     });
@@ -301,15 +283,6 @@
             } else {
                 alert("Navegador não suporta compartilhamento. Use 'Salvar Arquivo'.");
             }
-        }
-
-        function calcularTotal() {
-            let t = 0; 
-            document.querySelectorAll('.hr-input').forEach(i => {
-                t += (parseFloat(i.value) || 0);
-                i.setAttribute('value', i.value);
-            });
-            document.getElementById('total-horas').innerText = t;
         }
 
         window.onclick = e => { if (!e.target.matches('.input-nome-peca')) document.querySelectorAll('.suggestions').forEach(s => s.style.display = 'none'); }
