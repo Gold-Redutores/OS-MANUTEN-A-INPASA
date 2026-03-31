@@ -18,27 +18,36 @@
         .checkbox-container { display: flex; align-items: center; gap: 5px; cursor: pointer; }
         .checkbox-container input { width: auto; margin: 0; }
 
-        /* Estilo Área de Assinatura baseado na referência */
+        /* Estilo Área de Assinatura (Conforme Referência) */
         .area-assinaturas { margin-top: 30px; }
         .linha-assinaturas { display: flex; gap: 10px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
         .caixa-assinatura { text-align: center; flex: 1; min-width: 300px; max-width: 400px; }
-        .tela-assinatura { border: 1px sólido #ccc; background: #fafafa; width: 100%; height: 120px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; }
-        .nome-legivel { border-bottom: 1px dashed #ccc !important; text-align: center; font-weight: bold; margin-bottom: 5px; width: 100% !important; }
+        .tela-assinatura { border: 1px solid #ccc; background: #fafafa; width: 100%; height: 120px; margin-bottom: 10px; }
+        .nome-legivel { border-bottom: 1px dashed #ccc !important; text-align: center; font-weight: bold; margin-bottom: 5px; width: 100% !important; display: block; }
         .legenda-assinatura { font-weight: bold; font-size: 10px; text-transform: uppercase; color: var(--cor-primaria); }
 
+        /* Autocomplete */
+        .autocomplete-wrapper { position: relative; }
+        .suggestions { 
+            position: absolute; background: white; border: 2px solid #333; 
+            width: 100%; z-index: 999; max-height: 200px; overflow-y: auto; display: none; 
+        }
+        .suggestion-item { padding: 8px; cursor: pointer; border-bottom: 1px solid #eee; color: #000; }
+        .suggestion-item:hover { background-color: var(--cor-secundaria); color: white; }
+
         .foto-container { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 10px; }
-        .foto-item { border: 1px solid #333; padding: 8px; text-align: center; background: #fff; position: relative; page-break-inside: avoid; display: flex; flex-direction: column; }
-        .foto-preview { max-width: 100%; height: auto; max-height: 300px; object-fit: contain; margin-bottom: 8px; }
+        .foto-item { border: 1px solid #333; padding: 8px; text-align: center; position: relative; page-break-inside: avoid; }
+        .foto-preview { max-width: 100%; height: auto; max-height: 250px; object-fit: contain; }
 
         .btn-group { text-align: right; margin-top: 30px; display: flex; justify-content: flex-end; gap: 10px; }
-        button { padding: 14px 28px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; color: white; transition: 0.3s; }
+        button { padding: 14px 28px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; color: white; }
         .btn-pdf { background: var(--cor-primaria); }
         .btn-wpp { background: #25d366; }
 
         @media print { 
-            .no-print, .btn-group, .btn-remove { display: none !important; } 
+            .no-print, .btn-group, .suggestions { display: none !important; } 
             .tela-assinatura { background: transparent !important; border: 1px solid #000; }
-            body { margin: 0; }
+            .section { -webkit-print-color-adjust: exact; background-color: #d9d9d9 !important; }
         }
     </style>
 </head>
@@ -48,7 +57,7 @@
         <h2>RELATÓRIO DE MANUTENÇÃO PREVENTIVA</h2>
         <div style="margin-top: 10px;">
             <label style="font-weight: bold;">Nº ORDEM DE SERVIÇO: </label>
-            <input type="text" id="input-os" style="width: 150px; border-bottom: 2px solid var(--cor-secundaria); text-align: center; font-weight: bold; font-size: 18px;" placeholder="Ex: 5449">
+            <input type="text" id="input-os" style="width: 150px; border-bottom: 2px solid var(--cor-secundaria); text-align: center; font-weight: bold; font-size: 18px;" oninput="buscarDadosOS()">
         </div>
     </div>
 
@@ -77,22 +86,36 @@
         <tbody>
             <tr>
                 <td style="text-align: center; font-weight: bold;">Vertical (0° - 180°)</td>
-                <td><input type="text" style="text-align: center;" placeholder="0,00"></td>
-                <td><input type="text" style="text-align: center;" placeholder="0,00"></td>
+                <td><input type="text" style="text-align: center;"></td>
+                <td><input type="text" style="text-align: center;"></td>
             </tr>
             <tr>
                 <td style="text-align: center; font-weight: bold;">Horizontal (90° - 270°)</td>
-                <td><input type="text" style="text-align: center;" placeholder="0,00"></td>
-                <td><input type="text" style="text-align: center;" placeholder="0,00"></td>
+                <td><input type="text" style="text-align: center;"></td>
+                <td><input type="text" style="text-align: center;"></td>
             </tr>
         </tbody>
     </table>
 
     <div class="section">ANÁLISES FOTOGRÁFICAS</div>
+    <div class="no-print" style="padding: 10px; text-align: center; border: 2px dashed #ccc; margin: 10px 0;">
+        <input type="file" accept="image/*" multiple onchange="previewFotos(event)">
+    </div>
     <div id="container-fotos" class="foto-container"></div>
 
+    <div class="section">PEÇAS NECESSÁRIAS PARA EXECUÇÃO</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 85%;">Descrição da Peça</th>
+                <th style="width: 15%;">Qtd</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-pecas"></tbody>
+    </table>
+
     <div class="section">CONCLUSÕES</div>
-    <textarea id="conclusoes" rows="5" style="width: 100%; border: 1px solid #333; margin-top: 5px; padding: 8px;" placeholder="Parecer técnico final..."></textarea>
+    <textarea id="conclusoes" rows="4" style="width: 100%; border: 1px solid #333; margin-top: 5px; padding: 8px;"></textarea>
 
     <div class="area-assinaturas">
         <div class="linha-assinaturas">
@@ -117,13 +140,74 @@
     </div>
 
     <div class="btn-group no-print">
-        <button class="btn-wpp" onclick="alert('Funcionalidade de WhatsApp')">ENVIAR WHATSAPP</button>
-        <button class="btn-pdf" onclick="window.print()">IMPRIMIR / GERAR PDF</button>
+        <button class="btn-pdf" onclick="window.print()">GERAR PDF / IMPRIMIR</button>
     </div>
 
     <script>
+        const URL_PRODUTOS = 'https://raw.githubusercontent.com/Gold-Redutores/PRENCHIMENTO-OS-GOLD/refs/heads/main/relalisatagemprodutosdetada.csv';
+        let listaProdutos = [];
+
+        async function carregarProdutos() {
+            try {
+                const res = await fetch(URL_PRODUTOS);
+                const text = await res.text();
+                listaProdutos = text.split('\n').map(l => l.split(',')).filter(l => l.length > 5);
+            } catch (e) { console.error("Erro ao carregar peças"); }
+        }
+
+        function criarLinhaPeca() {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td class="autocomplete-wrapper">
+                    <input type="text" class="input-peca" placeholder="Digite para buscar...">
+                    <div class="suggestions"></div>
+                </td>
+                <td><input type="number" value="1" style="text-align:center;"></td>
+            `;
+            const input = tr.querySelector('.input-peca');
+            const sugestoes = tr.querySelector('.suggestions');
+
+            input.oninput = () => {
+                const busca = input.value.toLowerCase();
+                sugestoes.innerHTML = '';
+                if(busca.length < 2) { sugestoes.style.display = 'none'; return; }
+                
+                const filtrados = listaProdutos.filter(p => p[22] && p[22].toLowerCase().includes(busca)).slice(0, 10);
+                if(filtrados.length > 0) {
+                    sugestoes.style.display = 'block';
+                    filtrados.forEach(p => {
+                        const div = document.createElement('div');
+                        div.className = 'suggestion-item';
+                        div.innerText = p[22];
+                        div.onclick = () => {
+                            input.value = p[22];
+                            sugestoes.style.display = 'none';
+                            if(tr === document.querySelector('#tabela-pecas tr:last-child')) criarLinhaPeca();
+                        };
+                        sugestoes.appendChild(div);
+                    });
+                }
+            };
+            document.getElementById('tabela-pecas').appendChild(tr);
+        }
+
+        function previewFotos(e) {
+            for (let f of e.target.files) {
+                const r = new FileReader();
+                r.onload = ev => {
+                    const d = document.createElement('div');
+                    d.className = 'foto-item';
+                    d.innerHTML = `<img src="${ev.target.result}" class="foto-preview"><textarea placeholder="Parecer..."></textarea>`;
+                    document.getElementById('container-fotos').appendChild(d);
+                };
+                r.readAsDataURL(f);
+            }
+        }
+
         window.onload = () => {
             document.getElementById('data-atual').innerText = new Date().toLocaleDateString('pt-BR');
+            carregarProdutos();
+            criarLinhaPeca();
         };
     </script>
 </body>
