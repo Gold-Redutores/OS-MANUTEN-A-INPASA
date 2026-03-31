@@ -162,21 +162,24 @@
  <div class="area-assinaturas">
         <div class="linha-assinaturas">
             <div class="caixa-assinatura">
-                <div class="tela-assinatura"></div>
-                <input type="text" class="nome-legivel" placeholder="NOME LEGÍVEL">
-                <div class="legenda-assinatura">Técnico Responsável</div>
+                <input type="text" class="nome-legivel" placeholder="NOME DO TÉCNICO (LEGÍVEL)">
+                <canvas class="tela-assinatura" id="pad-tecnico"></canvas>
+                <button class="btn-limpar no-print" onclick="limparAssinatura('pad-tecnico')">Limpar</button>
+                <div class="legenda-assinatura">Assinatura do Técnico Responsável</div>
             </div>
             <div class="caixa-assinatura">
-                <div class="tela-assinatura"></div>
-                <input type="text" class="nome-legivel" placeholder="NOME LEGÍVEL">
-                <div class="legenda-assinatura">Responsável da Empresa</div>
+                <input type="text" class="nome-legivel" placeholder="NOME DO RESPONSÁVEL (LEGÍVEL)">
+                <canvas class="tela-assinatura" id="pad-empresa"></canvas>
+                <button class="btn-limpar no-print" onclick="limparAssinatura('pad-empresa')">Limpar</button>
+                <div class="legenda-assinatura">Assinatura do Responsável da Empresa</div>
             </div>
         </div>
         <div class="linha-assinaturas">
             <div class="caixa-assinatura">
-                <div class="tela-assinatura"></div>
-                <input type="text" class="nome-legivel" placeholder="NOME LEGÍVEL">
-                <div class="legenda-assinatura">Responsável Manutenção</div>
+                <input type="text" class="nome-legivel" placeholder="NOME DO RESPONSÁVEL (LEGÍVEL)">
+                <canvas class="tela-assinatura" id="pad-inpasa"></canvas>
+                <button class="btn-limpar no-print" onclick="limparAssinatura('pad-inpasa')">Limpar</button>
+                <div class="legenda-assinatura">Responsável Manutenção - INPASA</div>
             </div>
         </div>
     </div>
