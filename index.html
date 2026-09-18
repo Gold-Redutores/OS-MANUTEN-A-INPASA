@@ -74,8 +74,6 @@
         </tr>
     </table>
 
-   
-
     <div class="section">ANÁLISES FOTOGRÁFICAS</div>
     <div class="foto-upload-container no-print">
         <label style="font-weight: bold; display: block; margin-bottom: 5px;">📸 ADICIONAR FOTOS</label>
@@ -111,7 +109,6 @@
             </tr>
         </tfoot>
     </table>
-
 
     <div class="section">CONCLUSÕES</div>
     <textarea id="conclusoes" rows="5" style="width: 100%; border: 1px solid #333; margin-top: 5px; padding: 8px;" placeholder="Parecer técnico final..."></textarea>
@@ -168,7 +165,7 @@
 
         function parseCSV(text) {
             return text.split(/\r?\n/).map(linha => {
-                return linha.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(c => c.replace(/^"|"$/g, '').trim());
+                return linha.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(c => c.replace(/^"\vert{}"$/g, '').trim());
             }).filter(l => l.length > 5);
         }
 
@@ -260,7 +257,7 @@
             }
         }
 
-        // Lógica de Assinatura Digital
+        /* Lógica de Assinatura Digital */
         function configurarAssinatura(id) {
             const canvas = document.getElementById(id);
             const ctx = canvas.getContext("2d");
@@ -325,21 +322,10 @@
         }
 
         function enviarWhatsApp() {
-            const os = document.getElementById('input-os').value || "SN";
             alert("Instrução: Clique em 'GERAR PDF', salve o arquivo e anexe no WhatsApp do cliente.");
         }
 
-        window.onload = () => {
-            document.getElementById('data-atual').innerText = new Date().toLocaleDateString('pt-BR');
-            carregarDados();
-            criarLinhaPeca();
-            configurarAssinatura('pad-tecnico');
-            configurarAssinatura('pad-empresa');
-            configurarAssinatura('pad-inpasa');
-        };
-
-        window.onclick = e => { if (!e.target.matches('.input-nome-peca')) document.querySelectorAll('.suggestions').forEach(s => s.style.display = 'none'); }
-           // --- LÓGICA DE CÁLCULO DE HORAS ---
+        /* LÓGICA DE CÁLCULO DE HORAS */
         function calcularTotal() {
             let inputs = document.getElementsByClassName('hr-input');
             let total = 0;
@@ -350,10 +336,17 @@
             document.getElementById('total-horas').innerText = total;
         }
 
-        window.onload = calcularTotal
-    
-    
-    
+        window.onload = () => {
+            document.getElementById('data-atual').innerText = new Date().toLocaleDateString('pt-BR');
+            carregarDados();
+            criarLinhaPeca();
+            calcularTotal();
+            configurarAssinatura('pad-tecnico');
+            configurarAssinatura('pad-empresa');
+            configurarAssinatura('pad-inpasa');
+        };
+
+        window.onclick = e => { if (!e.target.matches('.input-nome-peca')) document.querySelectorAll('.suggestions').forEach(s => s.style.display = 'none'); }
     </script>
 </body>
 </html>
