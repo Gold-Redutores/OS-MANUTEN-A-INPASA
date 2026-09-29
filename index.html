@@ -256,31 +256,35 @@
         }
 
         function buscarDadosOS() {
-            const osVal = document.getElementById('input-os').value.trim();
-            if (osVal.length < 3) return;
+    // 1. Remove espaços em branco
+    const osVal = document.getElementById('input-os').value.trim();
+    if (!osVal) return;
 
-            const item = dadosOS[osVal];
-            if (item) {
-                const clienteInput = document.getElementById('campo-cliente');
-                const redutorInput = document.getElementById('campo-redutor');
-                const serieInput = document.getElementById('campo-serie');
-                const reducaoInput = document.getElementById('campo-reducao');
+    // 2. Busca o item no objeto de dados (tenta como digitado e sem zeros à esquerda)
+    const osSemZero = osVal.replace(/^0+/, '');
+    const item = dadosOS[osVal] || dadosOS[osSemZero];
 
-                clienteInput.value = item.cliente || "";
-                clienteInput.setAttribute('value', clienteInput.value);
+    if (item) {
+        const clienteInput = document.getElementById('campo-cliente');
+        const redutorInput = document.getElementById('campo-redutor');
+        const serieInput = document.getElementById('campo-serie');
+        const reducaoInput = document.getElementById('campo-reducao');
 
-                redutorInput.value = item.redutor || "";
-                redutorInput.setAttribute('value', redutorInput.value);
+        clienteInput.value = item.cliente || "";
+        clienteInput.setAttribute('value', clienteInput.value);
 
-                serieInput.value = item.serie || "";
-                serieInput.setAttribute('value', serieInput.value);
+        redutorInput.value = item.redutor || "";
+        redutorInput.setAttribute('value', redutorInput.value);
 
-                if (item.reducao) {
-                    reducaoInput.value = item.reducao;
-                    reducaoInput.setAttribute('value', reducaoInput.value);
-                }
-            }
+        serieInput.value = item.serie || "";
+        serieInput.setAttribute('value', serieInput.value);
+
+        if (item.reducao) {
+            reducaoInput.value = item.reducao;
+            reducaoInput.setAttribute('value', reducaoInput.value);
         }
+    }
+}
 
         function criarLinhaPeca() {
             const tr = document.createElement('tr');
