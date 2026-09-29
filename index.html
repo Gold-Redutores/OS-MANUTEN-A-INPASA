@@ -70,7 +70,7 @@
         <tr>
             <td><label><strong>Equipamento:</strong></label> <input type="text" id="campo-redutor"></td>
             <td><label><strong>Redução:</strong></label> <input type="text" id="campo-reducao" placeholder="Ex: 1:40"></td>
-            <td colspan="2"><label><strong>Série:</strong></label> <input type="text" id="campo-serie"></td>
+            <td colspan="2"><label><strong>Série / Cód Gold:</strong></label> <input type="text" id="campo-serie"></td>
         </tr>
     </table>
 
@@ -191,9 +191,13 @@
     </div>
 
     <script>
-        const URL_CSV_OS = 'https://raw.githubusercontent.com/Gold-Redutores/PRENCHIMENTO-OS-GOLD/main/dmsoser00000045.csv';
+        // URLs das fontes de dados com Timestamp para evitar cache do GitHub
+        const URL_JSON_OS = 'https://raw.githubusercontent.com/Gold-Redutores/PRENCHIMENTO-OS-GOLD/main/dados_os.json';
+        const URL_CSV_OS_BACKUP = 'https://raw.githubusercontent.com/Gold-Redutores/PRENCHIMENTO-OS-GOLD/main/dmsoser00000045.csv';
         const URL_CSV_PRODUTOS = 'https://raw.githubusercontent.com/Gold-Redutores/PRENCHIMENTO-OS-GOLD/refs/heads/main/relalisatagemprodutosdetada.csv';
-        let dadosOS = []; let listaProdutos = [];
+        
+        let dadosOS = {}; 
+        let listaProdutos = [];
 
         function parseCSV(text) {
             return text.split(/\r?\n/).map(linha => {
@@ -203,28 +207,77 @@
 
         async function carregarDados() {
             const status = document.getElementById('db-status');
+            const timestamp = Date.now();
             try {
-                const [resOS, resProd] = await Promise.all([ fetch(URL_CSV_OS), fetch(URL_CSV_PRODUTOS) ]);
-                dadosOS = parseCSV(await resOS.text());
-                listaProdutos = parseCSV(await resProd.text());
-                status.innerText = "✅ GitHub Sincronizado!";
+                // 1. Tenta carregar o JSON rápido da tabela BASE
+                try {
+                    const resJSON = await fetch(`${URL_JSON_OS}?t=${timestamp}`);
+                    if (resJSON.ok) {
+                        dadosOS = await resJSON.json();
+                        console.log("Dados carregados via JSON otimizado:", Object.keys(dadosOS).length, "registros.");
+                    }
+                } catch (eJSON) {
+                    console.warn("JSON não disponível, buscando CSV backup...", eJSON);
+                }
+
+                // 2. Se JSON não veio, carrega o CSV de backup
+                if (!dadosOS || Object.keys(dadosOS).length === 0) {
+                    const resCSV = await fetch(`${URL_CSV_OS_BACKUP}?t=${timestamp}`);
+                    const arrayCSV = parseCSV(await resCSV.text());
+                    dadosOS = {};
+                    arrayCSV.forEach(l => {
+                        const os = (l[21] || "").trim();
+                        if (os) {
+                            dadosOS[os] = {
+                                os: os,
+                                serie: l[23] || "",
+                                redutor: l[24] || "",
+                                cliente: l[26] || ""
+                            };
+                        }
+                    });
+                }
+
+                // 3. Carrega a lista de peças/produtos para busca global
+                try {
+                    const resProd = await fetch(`${URL_CSV_PRODUTOS}?t=${timestamp}`);
+                    listaProdutos = parseCSV(await resProd.text());
+                } catch(eProd) {
+                    console.warn("Produtos não carregados:", eProd);
+                }
+
+                status.innerText = "✅ Sincronizado com Sucesso!";
                 status.style.color = "green";
             } catch (e) {
                 status.innerText = "❌ Erro na sincronização.";
                 status.style.color = "red";
+                console.error(e);
             }
         }
 
         function buscarDadosOS() {
             const osVal = document.getElementById('input-os').value.trim();
             if (osVal.length < 3) return;
-            const linha = dadosOS.find(l => l[21] === osVal);
-            if (linha) {
-                const campos = { 'campo-serie': 23, 'campo-redutor': 24, 'campo-cliente': 26 };
-                for (let id in campos) {
-                    let input = document.getElementById(id);
-                    input.value = linha[campos[id]] || "";
-                    input.setAttribute('value', input.value);
+
+            const item = dadosOS[osVal];
+            if (item) {
+                const clienteInput = document.getElementById('campo-cliente');
+                const redutorInput = document.getElementById('campo-redutor');
+                const serieInput = document.getElementById('campo-serie');
+                const reducaoInput = document.getElementById('campo-reducao');
+
+                clienteInput.value = item.cliente || "";
+                clienteInput.setAttribute('value', clienteInput.value);
+
+                redutorInput.value = item.redutor || "";
+                redutorInput.setAttribute('value', redutorInput.value);
+
+                serieInput.value = item.serie || "";
+                serieInput.setAttribute('value', serieInput.value);
+
+                if (item.reducao) {
+                    reducaoInput.value = item.reducao;
+                    reducaoInput.setAttribute('value', reducaoInput.value);
                 }
             }
         }
@@ -260,8 +313,8 @@
                     filtrados.forEach(p => {
                         const div = document.createElement('div');
                         div.className = 'suggestion-item';
-                        div.innerText = p[22]; 
-                        div.onclick = () => selecionarSugestao(p[22], tr);
+                        div.innerText = p[22] || p[0] || ""; 
+                        div.onclick = () => selecionarSugestao(div.innerText, tr);
                         sugestoes.appendChild(div);
                     });
                 } else { sugestoes.style.display = 'none'; }
@@ -364,7 +417,6 @@
             ctx.clearRect(0, 0, canvas.width, canvas.height);
         }
 
-        /* CÁLCULO DE TEMPO DE MÃO DE OBRA E SOMA TOTAL */
         function calcularTempoLinha(elem) {
             const tr = elem.closest('tr');
             const inicio = tr.querySelector('.hr-inicio');
@@ -382,7 +434,7 @@
                 let minFim = hFim * 60 + mFim;
 
                 if (minFim < minInicio) {
-                    minFim += 24 * 60; // Tratamento para turnos noturnos
+                    minFim += 24 * 60;
                 }
 
                 const diff = minFim - minInicio;
