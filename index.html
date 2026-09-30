@@ -201,7 +201,13 @@
 
         function parseCSV(text) {
             return text.split(/\r?\n/).map(linha => {
-                return linha.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(c => c.replace(/^"\vert{}"$/g, '').trim());
+                return linha.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(c => {
+                    const valor = c.trim();
+                    const semAspas = valor.startsWith('"') && valor.endsWith('"')
+                        ? valor.slice(1, -1).replace(/""/g, '"')
+                        : valor;
+                    return semAspas.trim();
+                });
             }).filter(l => l.length > 5);
         }
 
@@ -223,6 +229,7 @@
                 // 2. Se JSON não veio, carrega o CSV de backup
                 if (!dadosOS || Object.keys(dadosOS).length === 0) {
                     const resCSV = await fetch(`${URL_CSV_OS_BACKUP}?t=${timestamp}`);
+                    if (!resCSV.ok) throw new Error(`Falha ao carregar CSV: HTTP ${resCSV.status}`);
                     const arrayCSV = parseCSV(await resCSV.text());
                     dadosOS = {};
                     arrayCSV.forEach(l => {
@@ -238,6 +245,10 @@
                     });
                 }
 
+                if (Object.keys(dadosOS).length === 0) {
+                    throw new Error("Nenhuma ordem de serviço foi carregada.");
+                }
+
                 // 3. Carrega a lista de peças/produtos para busca global
                 try {
                     const resProd = await fetch(`${URL_CSV_PRODUTOS}?t=${timestamp}`);
@@ -246,6 +257,7 @@
                     console.warn("Produtos não carregados:", eProd);
                 }
 
+                buscarDadosOS();
                 status.innerText = "✅ Sincronizado com Sucesso!";
                 status.style.color = "green";
             } catch (e) {
@@ -256,35 +268,20 @@
         }
 
         function buscarDadosOS() {
-    // 1. Remove espaços em branco
-    const osVal = document.getElementById('input-os').value.trim();
-    if (!osVal) return;
+            const osVal = document.getElementById('input-os').value.trim();
+            const item = osVal.length >= 3 ? dadosOS[osVal] : null;
+            const campos = {
+                cliente: document.getElementById('campo-cliente'),
+                redutor: document.getElementById('campo-redutor'),
+                serie: document.getElementById('campo-serie'),
+                reducao: document.getElementById('campo-reducao')
+            };
 
-    // 2. Busca o item no objeto de dados (tenta como digitado e sem zeros à esquerda)
-    const osSemZero = osVal.replace(/^0+/, '');
-    const item = dadosOS[osVal] || dadosOS[osSemZero];
-
-    if (item) {
-        const clienteInput = document.getElementById('campo-cliente');
-        const redutorInput = document.getElementById('campo-redutor');
-        const serieInput = document.getElementById('campo-serie');
-        const reducaoInput = document.getElementById('campo-reducao');
-
-        clienteInput.value = item.cliente || "";
-        clienteInput.setAttribute('value', clienteInput.value);
-
-        redutorInput.value = item.redutor || "";
-        redutorInput.setAttribute('value', redutorInput.value);
-
-        serieInput.value = item.serie || "";
-        serieInput.setAttribute('value', serieInput.value);
-
-        if (item.reducao) {
-            reducaoInput.value = item.reducao;
-            reducaoInput.setAttribute('value', reducaoInput.value);
+            Object.entries(campos).forEach(([campo, input]) => {
+                input.value = item?.[campo] || "";
+                input.setAttribute('value', input.value);
+            });
         }
-    }
-}
 
         function criarLinhaPeca() {
             const tr = document.createElement('tr');
