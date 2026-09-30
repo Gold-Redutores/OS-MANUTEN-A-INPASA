@@ -65,7 +65,7 @@
     <table>
         <tr>
             <td colspan="2"><label><strong>Cliente:</strong></label> <input type="text" id="campo-cliente"></td>
-            <td colspan="2"><label><strong>Data:</strong></label> <span id="data-atual" style="font-weight: bold;"></span></td>
+            <td colspan="2"><label><strong>Data de Criação:</strong></label> <span id="campo-data-criacao" style="font-weight: bold;"></span></td>
         </tr>
         <tr>
             <td><label><strong>Equipamento:</strong></label> <input type="text" id="campo-redutor"></td>
@@ -267,20 +267,35 @@
             }
         }
 
+        function formatarDataCriacao(valor) {
+            const correspondencia = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(valor || "").trim());
+            return correspondencia
+                ? `${correspondencia[3]}/${correspondencia[2]}/${correspondencia[1]}`
+                : String(valor || "");
+        }
+
         function buscarDadosOS() {
             const osVal = document.getElementById('input-os').value.trim();
             const item = osVal.length >= 3 ? dadosOS[osVal] : null;
             const campos = {
                 cliente: document.getElementById('campo-cliente'),
                 redutor: document.getElementById('campo-redutor'),
-                serie: document.getElementById('campo-serie'),
+                codigoGold: document.getElementById('campo-serie'),
                 reducao: document.getElementById('campo-reducao')
             };
+            const codigoGold = item && Object.prototype.hasOwnProperty.call(item, 'codigoGold')
+                ? item.codigoGold ?? ""
+                : item?.serie ?? "";
 
             Object.entries(campos).forEach(([campo, input]) => {
-                input.value = item?.[campo] || "";
+                const valor = campo === 'codigoGold'
+                    ? codigoGold
+                    : item?.[campo] ?? "";
+                input.value = valor;
                 input.setAttribute('value', input.value);
             });
+
+            document.getElementById('campo-data-criacao').innerText = formatarDataCriacao(item?.dataCriacao);
         }
 
         function criarLinhaPeca() {
@@ -497,7 +512,6 @@
         }
 
         window.onload = () => {
-            document.getElementById('data-atual').innerText = new Date().toLocaleDateString('pt-BR');
             carregarDados();
             criarLinhaPeca();
             setTimeout(() => {
