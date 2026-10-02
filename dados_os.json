@@ -1,4 +1,4 @@
-﻿{
+{
     "4897":  {
                  "os":  "4897",
                  "cliente":  "ADEILTON RIBEIRO DE OLIVEIRA",
@@ -6300,6 +6300,17 @@
                  "dataCriacao":  "2026-08-17",
                  "classe":  "MOTOR",
                  "fase":  "Orçamento Emitido",
+                 "reducao":  ""
+             },
+    "6280":  {
+                 "os":  "6280",
+                 "cliente":  "DUAL DUARTE ALBUQUERQUE COM. E IND. LTDA",
+                 "redutor":  "MOTOR 10 CV 4 POLOS",
+                 "serie":  "GM.21012",
+                 "codigoGold":  "GM.21012",
+                 "dataCriacao":  "2026-10-01",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "6129":  {
