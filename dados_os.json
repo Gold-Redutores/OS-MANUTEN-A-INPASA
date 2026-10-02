@@ -1712,7 +1712,7 @@
                  "codigoGold":  "GM.21010",
                  "dataCriacao":  "2026-10-01",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "5062":  {
@@ -6269,6 +6269,28 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "6283":  {
+                 "os":  "6283",
+                 "cliente":  "DUAL DUARTE ALBUQUERQUE COM. E IND. LTDA",
+                 "redutor":  "MOTOR 1.0 CV 4 POLOS EXD",
+                 "serie":  "GM.21015",
+                 "codigoGold":  "GM.21015",
+                 "dataCriacao":  "2026-10-01",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6284":  {
+                 "os":  "6284",
+                 "cliente":  "DUAL DUARTE ALBUQUERQUE COM. E IND. LTDA",
+                 "redutor":  "MOTOR 1.0 CV 4 POLOS EXD",
+                 "serie":  "GM.21016",
+                 "codigoGold":  "GM.21016",
+                 "dataCriacao":  "2026-10-02",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "6203":  {
                  "os":  "6203",
                  "cliente":  "DUAL DUARTE ALBUQUERQUE COM. E IND. LTDA",
@@ -6309,6 +6331,28 @@
                  "serie":  "GM.21012",
                  "codigoGold":  "GM.21012",
                  "dataCriacao":  "2026-10-01",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6281":  {
+                 "os":  "6281",
+                 "cliente":  "DUAL DUARTE ALBUQUERQUE COM. E IND. LTDA",
+                 "redutor":  "MOTOR 5 CV 2 POLOS EXD",
+                 "serie":  "GM.21013",
+                 "codigoGold":  "GM.21013",
+                 "dataCriacao":  "2026-10-02",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6282":  {
+                 "os":  "6282",
+                 "cliente":  "DUAL DUARTE ALBUQUERQUE COM. E IND. LTDA",
+                 "redutor":  "MOTOR 0.75 CV 4 POLOS",
+                 "serie":  "GM.21014",
+                 "codigoGold":  "GM.21014",
+                 "dataCriacao":  "2026-10-02",
                  "classe":  "MOTOR",
                  "fase":  "Aguardando Análise",
                  "reducao":  ""
@@ -8059,7 +8103,7 @@
                  "codigoGold":  "GD.20281",
                  "dataCriacao":  "2026-09-11",
                  "classe":  "DRIVE",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6243":  {
@@ -12789,7 +12833,7 @@
                  "codigoGold":  "GR.20247",
                  "dataCriacao":  "2026-10-01",
                  "classe":  "REDUTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "5452":  {
