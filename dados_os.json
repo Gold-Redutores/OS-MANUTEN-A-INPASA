@@ -271,7 +271,7 @@
                  "codigoGold":  "GM.20871",
                  "dataCriacao":  "2026-06-15",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6068":  {
@@ -6398,7 +6398,7 @@
                  "codigoGold":  "GM.20944",
                  "dataCriacao":  "2026-08-17",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6200":  {
@@ -6508,7 +6508,7 @@
                  "codigoGold":  "GM.20752",
                  "dataCriacao":  "2026-05-12",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "5892":  {
@@ -6794,7 +6794,7 @@
                  "codigoGold":  "GM.21006",
                  "dataCriacao":  "2026-09-28",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6267":  {
@@ -6805,7 +6805,7 @@
                  "codigoGold":  "GM.21007",
                  "dataCriacao":  "2026-09-28",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6271":  {
@@ -6860,7 +6860,7 @@
                  "codigoGold":  "GM.21005",
                  "dataCriacao":  "2026-09-28",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "4795":  {
@@ -7785,6 +7785,17 @@
                  "dataCriacao":  "2025-11-28",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "6286":  {
+                 "os":  "6286",
+                 "cliente":  "HOSPITAL E MATERNIDADE NOSSA SENHORA APARECIDA",
+                 "redutor":  "MOTOR 1 CV 4 POLOS",
+                 "serie":  "GM.21018",
+                 "codigoGold":  "GM.21018",
+                 "dataCriacao":  "2026-10-05",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "4882":  {
@@ -10655,7 +10666,7 @@
                  "codigoGold":  "GR.20232",
                  "dataCriacao":  "2026-07-13",
                  "classe":  "REDUTOR",
-                 "fase":  "EM LINHA DE PRODUÇÃO",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "5956":  {
@@ -12811,7 +12822,7 @@
                  "codigoGold":  "GM.21000",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6263":  {
@@ -12822,7 +12833,7 @@
                  "codigoGold":  "GM.21004",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6264":  {
@@ -13240,7 +13251,7 @@
                  "codigoGold":  "GM.21011",
                  "dataCriacao":  "2026-10-01",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "5171":  {
