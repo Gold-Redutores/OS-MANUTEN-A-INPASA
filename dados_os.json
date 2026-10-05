@@ -1715,6 +1715,17 @@
                  "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
+    "6285":  {
+                 "os":  "6285",
+                 "cliente":  "ANTONIO HENRIQUE DA ROCHA SOUZA LTDA",
+                 "redutor":  "MOTOR 2 CV 2 POLOS",
+                 "serie":  "GM.21017",
+                 "codigoGold":  "GM.21017",
+                 "dataCriacao":  "2026-10-02",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "5062":  {
                  "os":  "5062",
                  "cliente":  "ATIVA MATERIAIS ELETRICOS LTDA",
