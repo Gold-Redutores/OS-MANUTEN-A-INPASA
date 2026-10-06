@@ -2210,6 +2210,17 @@
                  "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
+    "6287":  {
+                 "os":  "6287",
+                 "cliente":  "BUNGE ALIMENTOS S/A",
+                 "redutor":  "MOTOR 2 CV 2 POLOS EXD",
+                 "serie":  "GM.21019",
+                 "codigoGold":  "GM.21019",
+                 "dataCriacao":  "2026-10-06",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "5708":  {
                  "os":  "5708",
                  "cliente":  "BUNGE ALIMENTOS S/A",
