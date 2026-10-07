@@ -2746,7 +2746,7 @@
                  "codigoGold":  "GM.20937",
                  "dataCriacao":  "2026-08-11",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6139":  {
@@ -2975,6 +2975,28 @@
                  "redutor":  "MOTOR 25 CV 4 POLOS EXT",
                  "serie":  "GM.21024",
                  "codigoGold":  "GM.21024",
+                 "dataCriacao":  "2026-10-06",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6293":  {
+                 "os":  "6293",
+                 "cliente":  "CARGILL AGRICOLA S.A",
+                 "redutor":  "MOTOR 15 CV 4 POLOS EXT",
+                 "serie":  "GM.21025",
+                 "codigoGold":  "GM.21025",
+                 "dataCriacao":  "2026-10-06",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6294":  {
+                 "os":  "6294",
+                 "cliente":  "CARGILL AGRICOLA S.A",
+                 "redutor":  "MOTOR 30 CV 4 POLOS",
+                 "serie":  "GM.21026",
+                 "codigoGold":  "GM.21026",
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
                  "fase":  "Aguardando Análise",
