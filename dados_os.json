@@ -1349,7 +1349,7 @@
                  "codigoGold":  "GR.20242",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "REDUTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6259":  {
@@ -8447,17 +8447,6 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "6237":  {
-                 "os":  "6237",
-                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR GH110 GEREMIA",
-                 "serie":  "GR.20241",
-                 "codigoGold":  "GR.20241",
-                 "dataCriacao":  "2026-09-02",
-                 "classe":  "REDUTOR",
-                 "fase":  "Orçamento Emitido",
-                 "reducao":  ""
-             },
     "6240":  {
                  "os":  "6240",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
@@ -8489,17 +8478,6 @@
                  "dataCriacao":  "2026-09-29",
                  "classe":  "REDUTOR",
                  "fase":  "Aguardando Análise",
-                 "reducao":  ""
-             },
-    "6151":  {
-                 "os":  "6151",
-                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 10 CV  4 POLOS",
-                 "serie":  "GM.20916",
-                 "codigoGold":  "GM.20916",
-                 "dataCriacao":  "2026-07-25",
-                 "classe":  "MOTOR",
-                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6152":  {
@@ -8557,15 +8535,15 @@
                  "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
-    "6117":  {
-                 "os":  "6117",
+    "6237":  {
+                 "os":  "6237",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 2 CV 4 POLOS",
-                 "serie":  "GM.20894",
-                 "codigoGold":  "GM.20894",
-                 "dataCriacao":  "2026-07-07",
-                 "classe":  "MOTOR",
-                 "fase":  "Equipamento Entregue",
+                 "redutor":  "REDUTOR GH110 GEREMIA",
+                 "serie":  "GR.20241",
+                 "codigoGold":  "GR.20241",
+                 "dataCriacao":  "2026-09-02",
+                 "classe":  "REDUTOR",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6118":  {
@@ -8623,13 +8601,13 @@
                  "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
-    "6111":  {
-                 "os":  "6111",
+    "6151":  {
+                 "os":  "6151",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 1,5 CV 4 POLOS",
-                 "serie":  "GM.20891",
-                 "codigoGold":  "GM.20891",
-                 "dataCriacao":  "2026-07-06",
+                 "redutor":  "MOTOR 10 CV  4 POLOS",
+                 "serie":  "GM.20916",
+                 "codigoGold":  "GM.20916",
+                 "dataCriacao":  "2026-07-25",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
@@ -8689,14 +8667,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "6105":  {
-                 "os":  "6105",
+    "6117":  {
+                 "os":  "6117",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR WEG C O6",
-                 "serie":  "GR.20224",
-                 "codigoGold":  "GR.20224",
-                 "dataCriacao":  "2026-07-06",
-                 "classe":  "REDUTOR",
+                 "redutor":  "MOTOR 2 CV 4 POLOS",
+                 "serie":  "GM.20894",
+                 "codigoGold":  "GM.20894",
+                 "dataCriacao":  "2026-07-07",
+                 "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -8755,13 +8733,13 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "6055":  {
-                 "os":  "6055",
+    "6111":  {
+                 "os":  "6111",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 5CV 4 POLOS",
-                 "serie":  "GM.20857",
-                 "codigoGold":  "GM.20857",
-                 "dataCriacao":  "2026-05-22",
+                 "redutor":  "MOTOR 1,5 CV 4 POLOS",
+                 "serie":  "GM.20891",
+                 "codigoGold":  "GM.20891",
+                 "dataCriacao":  "2026-07-06",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
@@ -8821,13 +8799,13 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "6049":  {
-                 "os":  "6049",
+    "6105":  {
+                 "os":  "6105",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR WEG CESTARI WCG20 F06 3",
-                 "serie":  "GR.20214",
-                 "codigoGold":  "GR.20214",
-                 "dataCriacao":  "2026-05-25",
+                 "redutor":  "REDUTOR WEG C O6",
+                 "serie":  "GR.20224",
+                 "codigoGold":  "GR.20224",
+                 "dataCriacao":  "2026-07-06",
                  "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
@@ -8887,12 +8865,12 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "6043":  {
-                 "os":  "6043",
+    "6055":  {
+                 "os":  "6055",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 3 CV 4 POLOS WEG",
-                 "serie":  "GM.20850",
-                 "codigoGold":  "GM.20850",
+                 "redutor":  "MOTOR 5CV 4 POLOS",
+                 "serie":  "GM.20857",
+                 "codigoGold":  "GM.20857",
                  "dataCriacao":  "2026-05-22",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
@@ -8953,13 +8931,13 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "6037":  {
-                 "os":  "6037",
+    "6049":  {
+                 "os":  "6049",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR  SEW FA 57",
-                 "serie":  "GR.20211",
-                 "codigoGold":  "GR.20211",
-                 "dataCriacao":  "2026-05-22",
+                 "redutor":  "REDUTOR WEG CESTARI WCG20 F06 3",
+                 "serie":  "GR.20214",
+                 "codigoGold":  "GR.20214",
+                 "dataCriacao":  "2026-05-25",
                  "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
@@ -9019,14 +8997,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "6030":  {
-                 "os":  "6030",
+    "6043":  {
+                 "os":  "6043",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR SEW FA 77",
-                 "serie":  "GR.20164",
-                 "codigoGold":  "GR.20164",
+                 "redutor":  "MOTOR 3 CV 4 POLOS WEG",
+                 "serie":  "GM.20850",
+                 "codigoGold":  "GM.20850",
                  "dataCriacao":  "2026-05-22",
-                 "classe":  "REDUTOR",
+                 "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -9085,13 +9063,13 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "6023":  {
-                 "os":  "6023",
+    "6037":  {
+                 "os":  "6037",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR SEW",
-                 "serie":  "GR.20202",
-                 "codigoGold":  "GR.20202",
-                 "dataCriacao":  "2026-05-29",
+                 "redutor":  "REDUTOR  SEW FA 57",
+                 "serie":  "GR.20211",
+                 "codigoGold":  "GR.20211",
+                 "dataCriacao":  "2026-05-22",
                  "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
@@ -9151,14 +9129,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "6015":  {
-                 "os":  "6015",
+    "6030":  {
+                 "os":  "6030",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 25 CV 4 POLOS SEW ME-601079",
-                 "serie":  "GM.20835",
-                 "codigoGold":  "GM.20835",
+                 "redutor":  "REDUTOR SEW FA 77",
+                 "serie":  "GR.20164",
+                 "codigoGold":  "GR.20164",
                  "dataCriacao":  "2026-05-22",
-                 "classe":  "MOTOR",
+                 "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -9217,14 +9195,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "6009":  {
-                 "os":  "6009",
+    "6023":  {
+                 "os":  "6023",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 1800 CV 8 POLOS WEG",
-                 "serie":  "GM.20831",
-                 "codigoGold":  "GM.20831",
-                 "dataCriacao":  "2026-05-22",
-                 "classe":  "MOTOR",
+                 "redutor":  "REDUTOR SEW",
+                 "serie":  "GR.20202",
+                 "codigoGold":  "GR.20202",
+                 "dataCriacao":  "2026-05-29",
+                 "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -9283,12 +9261,12 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "6003":  {
-                 "os":  "6003",
+    "6015":  {
+                 "os":  "6015",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 400 CV 6 POLOS ME-601006",
-                 "serie":  "GM.20825",
-                 "codigoGold":  "GM.20825",
+                 "redutor":  "MOTOR 25 CV 4 POLOS SEW ME-601079",
+                 "serie":  "GM.20835",
+                 "codigoGold":  "GM.20835",
                  "dataCriacao":  "2026-05-22",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
@@ -9349,14 +9327,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5995":  {
-                 "os":  "5995",
+    "6009":  {
+                 "os":  "6009",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR ME-601046",
-                 "serie":  "GR.20196",
-                 "codigoGold":  "GR.20196",
-                 "dataCriacao":  "2026-05-25",
-                 "classe":  "REDUTOR",
+                 "redutor":  "MOTOR 1800 CV 8 POLOS WEG",
+                 "serie":  "GM.20831",
+                 "codigoGold":  "GM.20831",
+                 "dataCriacao":  "2026-05-22",
+                 "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -9415,14 +9393,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5989":  {
-                 "os":  "5989",
+    "6003":  {
+                 "os":  "6003",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR ME-601043",
-                 "serie":  "GR.20193",
-                 "codigoGold":  "GR.20193",
+                 "redutor":  "MOTOR 400 CV 6 POLOS ME-601006",
+                 "serie":  "GM.20825",
+                 "codigoGold":  "GM.20825",
                  "dataCriacao":  "2026-05-22",
-                 "classe":  "REDUTOR",
+                 "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -9481,13 +9459,13 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5983":  {
-                 "os":  "5983",
+    "5995":  {
+                 "os":  "5995",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR",
-                 "serie":  "GR.20190",
-                 "codigoGold":  "GR.20190",
-                 "dataCriacao":  "2026-05-22",
+                 "redutor":  "REDUTOR ME-601046",
+                 "serie":  "GR.20196",
+                 "codigoGold":  "GR.20196",
+                 "dataCriacao":  "2026-05-25",
                  "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
@@ -9547,12 +9525,12 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5977":  {
-                 "os":  "5977",
+    "5989":  {
+                 "os":  "5989",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR ME-601040",
-                 "serie":  "GR.20187",
-                 "codigoGold":  "GR.20187",
+                 "redutor":  "REDUTOR ME-601043",
+                 "serie":  "GR.20193",
+                 "codigoGold":  "GR.20193",
                  "dataCriacao":  "2026-05-22",
                  "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
@@ -9613,12 +9591,12 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5971":  {
-                 "os":  "5971",
+    "5983":  {
+                 "os":  "5983",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
                  "redutor":  "REDUTOR",
-                 "serie":  "GR.20184",
-                 "codigoGold":  "GR.20184",
+                 "serie":  "GR.20190",
+                 "codigoGold":  "GR.20190",
                  "dataCriacao":  "2026-05-22",
                  "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
@@ -9679,12 +9657,12 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5965":  {
-                 "os":  "5965",
+    "5977":  {
+                 "os":  "5977",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR ME-601035",
-                 "serie":  "GR.20181",
-                 "codigoGold":  "GR.20181",
+                 "redutor":  "REDUTOR ME-601040",
+                 "serie":  "GR.20187",
+                 "codigoGold":  "GR.20187",
                  "dataCriacao":  "2026-05-22",
                  "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
@@ -9745,14 +9723,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5959":  {
-                 "os":  "5959",
+    "5971":  {
+                 "os":  "5971",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 12,5 CV",
-                 "serie":  "GM.20797",
-                 "codigoGold":  "GM.20797",
-                 "dataCriacao":  "2026-05-20",
-                 "classe":  "MOTOR",
+                 "redutor":  "REDUTOR",
+                 "serie":  "GR.20184",
+                 "codigoGold":  "GR.20184",
+                 "dataCriacao":  "2026-05-22",
+                 "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -9811,13 +9789,13 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5952":  {
-                 "os":  "5952",
+    "5965":  {
+                 "os":  "5965",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR CESTARI - C10 3",
-                 "serie":  "GR.20148",
-                 "codigoGold":  "GR.20148",
-                 "dataCriacao":  "2026-05-20",
+                 "redutor":  "REDUTOR ME-601035",
+                 "serie":  "GR.20181",
+                 "codigoGold":  "GR.20181",
+                 "dataCriacao":  "2026-05-22",
                  "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
@@ -9877,14 +9855,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5941":  {
-                 "os":  "5941",
+    "5959":  {
+                 "os":  "5959",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR CESTARI - C10 3",
-                 "serie":  "GR.20148",
-                 "codigoGold":  "GR.20148",
-                 "dataCriacao":  "2026-05-19",
-                 "classe":  "REDUTOR",
+                 "redutor":  "MOTOR 12,5 CV",
+                 "serie":  "GM.20797",
+                 "codigoGold":  "GM.20797",
+                 "dataCriacao":  "2026-05-20",
+                 "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -9943,14 +9921,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5935":  {
-                 "os":  "5935",
+    "5952":  {
+                 "os":  "5952",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 4CV 4 POLOS",
-                 "serie":  "GM.20782",
-                 "codigoGold":  "GM.20782",
-                 "dataCriacao":  "2026-05-19",
-                 "classe":  "MOTOR",
+                 "redutor":  "REDUTOR CESTARI - C10 3",
+                 "serie":  "GR.20148",
+                 "codigoGold":  "GR.20148",
+                 "dataCriacao":  "2026-05-20",
+                 "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -10009,12 +9987,12 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5929":  {
-                 "os":  "5929",
+    "5941":  {
+                 "os":  "5941",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR SEW FA 77",
-                 "serie":  "GR.20164",
-                 "codigoGold":  "GR.20164",
+                 "redutor":  "REDUTOR CESTARI - C10 3",
+                 "serie":  "GR.20148",
+                 "codigoGold":  "GR.20148",
                  "dataCriacao":  "2026-05-19",
                  "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
@@ -10075,13 +10053,13 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5923":  {
-                 "os":  "5923",
+    "5935":  {
+                 "os":  "5935",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 5CV 4 POLOS",
-                 "serie":  "GM.20774",
-                 "codigoGold":  "GM.20774",
-                 "dataCriacao":  "2026-05-18",
+                 "redutor":  "MOTOR 4CV 4 POLOS",
+                 "serie":  "GM.20782",
+                 "codigoGold":  "GM.20782",
+                 "dataCriacao":  "2026-05-19",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
@@ -10141,14 +10119,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5917":  {
-                 "os":  "5917",
+    "5929":  {
+                 "os":  "5929",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR SEM PLACA - ME 601018",
-                 "serie":  "GM.20770",
-                 "codigoGold":  "GM.20770",
-                 "dataCriacao":  "2026-05-13",
-                 "classe":  "MOTOR",
+                 "redutor":  "REDUTOR SEW FA 77",
+                 "serie":  "GR.20164",
+                 "codigoGold":  "GR.20164",
+                 "dataCriacao":  "2026-05-19",
+                 "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -10207,14 +10185,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5911":  {
-                 "os":  "5911",
+    "5923":  {
+                 "os":  "5923",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR SEW FA77 1:181",
-                 "serie":  "GR.20165",
-                 "codigoGold":  "GR.20165",
-                 "dataCriacao":  "2026-05-15",
-                 "classe":  "REDUTOR",
+                 "redutor":  "MOTOR 5CV 4 POLOS",
+                 "serie":  "GM.20774",
+                 "codigoGold":  "GM.20774",
+                 "dataCriacao":  "2026-05-18",
+                 "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -10273,12 +10251,12 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5902":  {
-                 "os":  "5902",
+    "5917":  {
+                 "os":  "5917",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR SEM PLACA 4309674",
-                 "serie":  "GM.20760",
-                 "codigoGold":  "GM.20760",
+                 "redutor":  "MOTOR SEM PLACA - ME 601018",
+                 "serie":  "GM.20770",
+                 "codigoGold":  "GM.20770",
                  "dataCriacao":  "2026-05-13",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
@@ -10339,14 +10317,14 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5895":  {
-                 "os":  "5895",
+    "5911":  {
+                 "os":  "5911",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "MOTOR 1,5 CV 4 POLOS",
-                 "serie":  "GM.20755",
-                 "codigoGold":  "GM.20755",
-                 "dataCriacao":  "2026-05-14",
-                 "classe":  "MOTOR",
+                 "redutor":  "REDUTOR SEW FA77 1:181",
+                 "serie":  "GR.20165",
+                 "codigoGold":  "GR.20165",
+                 "dataCriacao":  "2026-05-15",
+                 "classe":  "REDUTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -10405,6 +10383,17 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "5902":  {
+                 "os":  "5902",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR SEM PLACA 4309674",
+                 "serie":  "GM.20760",
+                 "codigoGold":  "GM.20760",
+                 "dataCriacao":  "2026-05-13",
+                 "classe":  "MOTOR",
+                 "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
     "5877":  {
                  "os":  "5877",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
@@ -10438,17 +10427,6 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
-    "5880":  {
-                 "os":  "5880",
-                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR CESTARI",
-                 "serie":  "GR.20150",
-                 "codigoGold":  "GR.20150",
-                 "dataCriacao":  "2026-05-04",
-                 "classe":  "REDUTOR",
-                 "fase":  "Equipamento Entregue",
-                 "reducao":  ""
-             },
     "5881":  {
                  "os":  "5881",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
@@ -10468,6 +10446,17 @@
                  "codigoGold":  "GR.20148",
                  "dataCriacao":  "2026-05-14",
                  "classe":  "REDUTOR",
+                 "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "5895":  {
+                 "os":  "5895",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 1,5 CV 4 POLOS",
+                 "serie":  "GM.20755",
+                 "codigoGold":  "GM.20755",
+                 "dataCriacao":  "2026-05-14",
+                 "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
@@ -14868,7 +14857,7 @@
                  "codigoGold":  "GM.20930",
                  "dataCriacao":  "2026-08-06",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6177":  {
