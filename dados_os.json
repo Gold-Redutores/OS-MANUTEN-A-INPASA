@@ -3002,6 +3002,28 @@
                  "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
+    "6289":  {
+                 "os":  "6289",
+                 "cliente":  "CARGILL AGRICOLA S.A",
+                 "redutor":  "MOTOR 7.5 CV 4 POLOS EXD",
+                 "serie":  "GM.21021",
+                 "codigoGold":  "GM.21021",
+                 "dataCriacao":  "2026-10-06",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6290":  {
+                 "os":  "6290",
+                 "cliente":  "CARGILL AGRICOLA S.A",
+                 "redutor":  "MOTOR 3.0 CV 4 POLOS EXT",
+                 "serie":  "GM.21022",
+                 "codigoGold":  "GM.21022",
+                 "dataCriacao":  "2026-10-06",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "4896":  {
                  "os":  "4896",
                  "cliente":  "CARLA R DA S HUNECKE LTDA",
@@ -6882,7 +6904,7 @@
                  "codigoGold":  "GM.21005",
                  "dataCriacao":  "2026-09-28",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "4795":  {
