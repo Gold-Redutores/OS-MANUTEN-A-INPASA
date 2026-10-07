@@ -216,7 +216,7 @@
                  "codigoGold":  "GM.20940",
                  "dataCriacao":  "2026-08-12",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "EM LINHA DE PRODUÇÃO",
                  "reducao":  ""
              },
     "6193":  {
@@ -227,7 +227,7 @@
                  "codigoGold":  "GM.20941",
                  "dataCriacao":  "2026-08-12",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "EM LINHA DE PRODUÇÃO",
                  "reducao":  ""
              },
     "6194":  {
@@ -2956,6 +2956,28 @@
                  "dataCriacao":  "2025-10-14",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "6291":  {
+                 "os":  "6291",
+                 "cliente":  "CARGILL AGRICOLA S.A",
+                 "redutor":  "MOTOR 20 CV 4 POLOS",
+                 "serie":  "GM.21023",
+                 "codigoGold":  "GM.21023",
+                 "dataCriacao":  "2026-10-06",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6292":  {
+                 "os":  "6292",
+                 "cliente":  "CARGILL AGRICOLA S.A",
+                 "redutor":  "MOTOR 25 CV 4 POLOS EXT",
+                 "serie":  "GM.21024",
+                 "codigoGold":  "GM.21024",
+                 "dataCriacao":  "2026-10-06",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "5196":  {
@@ -6838,7 +6860,7 @@
                  "codigoGold":  "GM.21006",
                  "dataCriacao":  "2026-09-28",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6267":  {
@@ -13471,7 +13493,7 @@
                  "codigoGold":  "GM.20683",
                  "dataCriacao":  "2026-03-27",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "EM LINHA DE PRODUÇÃO",
                  "reducao":  ""
              },
     "5798":  {
@@ -13570,7 +13592,7 @@
                  "codigoGold":  "GM.20680",
                  "dataCriacao":  "2026-03-27",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "EM LINHA DE PRODUÇÃO",
                  "reducao":  ""
              },
     "5795":  {
@@ -13581,7 +13603,7 @@
                  "codigoGold":  "GM.20681",
                  "dataCriacao":  "2026-03-27",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "EM LINHA DE PRODUÇÃO",
                  "reducao":  ""
              },
     "5796":  {
@@ -13592,7 +13614,7 @@
                  "codigoGold":  "GM.20682",
                  "dataCriacao":  "2026-03-27",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "EM LINHA DE PRODUÇÃO",
                  "reducao":  ""
              },
     "5225":  {
@@ -13922,7 +13944,7 @@
                  "codigoGold":  "GR.20004",
                  "dataCriacao":  "2025-04-01",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "4813":  {
@@ -14802,7 +14824,7 @@
                  "codigoGold":  "GM.20931",
                  "dataCriacao":  "2026-08-06",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "EM LINHA DE PRODUÇÃO",
                  "reducao":  ""
              },
     "6178":  {
