@@ -3002,6 +3002,17 @@
                  "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
+    "6295":  {
+                 "os":  "6295",
+                 "cliente":  "CARGILL AGRICOLA S.A",
+                 "redutor":  "MOTOR 3.0 CV 4 POLOS EXD",
+                 "serie":  "GM.21027",
+                 "codigoGold":  "GM.21027",
+                 "dataCriacao":  "2026-10-06",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "5196":  {
                  "os":  "5196",
                  "cliente":  "CARGILL AGRICOLA S.A",
