@@ -15102,6 +15102,28 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "6298":  {
+                 "os":  "6298",
+                 "cliente":  "USINAS ITAMARATI S/A",
+                 "redutor":  "MOTOR 40 CV 4 POLOS EXD",
+                 "serie":  "GM.21030",
+                 "codigoGold":  "GM.21030",
+                 "dataCriacao":  "2026-10-07",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6299":  {
+                 "os":  "6299",
+                 "cliente":  "USINAS ITAMARATI S/A",
+                 "redutor":  "MOTOR 25 CV 4 POLOS EXD",
+                 "serie":  "GM.21031",
+                 "codigoGold":  "GM.21031",
+                 "dataCriacao":  "2026-10-07",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "5837":  {
                  "os":  "5837",
                  "cliente":  "USINAS ITAMARATI S/A",
