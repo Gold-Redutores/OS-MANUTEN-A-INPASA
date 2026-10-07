@@ -3071,9 +3071,9 @@
     "6288":  {
                  "os":  "6288",
                  "cliente":  "CARGILL AGRICOLA S.A",
-                 "redutor":  "MOTOR TRIFÁSICO 400 CV 4 POLOS",
-                 "serie":  "GM.20172",
-                 "codigoGold":  "GM.20172",
+                 "redutor":  "MOTOR 400 CV 4 POLOS EXD",
+                 "serie":  "GM.21020",
+                 "codigoGold":  "GM.21020",
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
                  "fase":  "Aguardando Análise",
@@ -3175,7 +3175,7 @@
                  "codigoGold":  "GM.20998",
                  "dataCriacao":  "2026-09-23",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "14":  {
