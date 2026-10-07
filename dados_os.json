@@ -1393,7 +1393,7 @@
                  "codigoGold":  "GR.20244",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "REDUTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6119":  {
@@ -8477,7 +8477,7 @@
                  "codigoGold":  "GR.20150",
                  "dataCriacao":  "2026-09-29",
                  "classe":  "REDUTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6152":  {
