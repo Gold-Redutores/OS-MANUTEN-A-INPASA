@@ -2991,6 +2991,17 @@
                  "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
+    "6288":  {
+                 "os":  "6288",
+                 "cliente":  "CARGILL AGRICOLA S.A",
+                 "redutor":  "MOTOR TRIFÁSICO 400 CV 4 POLOS",
+                 "serie":  "GM.20172",
+                 "codigoGold":  "GM.20172",
+                 "dataCriacao":  "2026-10-06",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "4896":  {
                  "os":  "4896",
                  "cliente":  "CARLA R DA S HUNECKE LTDA",
