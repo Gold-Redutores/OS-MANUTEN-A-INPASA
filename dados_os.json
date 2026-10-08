@@ -5089,7 +5089,7 @@
                  "codigoGold":  "GM.20546",
                  "dataCriacao":  "2026-02-05",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "5637":  {
@@ -7674,7 +7674,7 @@
                  "codigoGold":  "GD.20289",
                  "dataCriacao":  "2026-10-01",
                  "classe":  "DRIVE",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "4957":  {
