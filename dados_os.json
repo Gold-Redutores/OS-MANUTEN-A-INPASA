@@ -13364,6 +13364,17 @@
                  "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
+    "6300":  {
+                 "os":  "6300",
+                 "cliente":  "RIO CORRENTE AGRICOLA S/A",
+                 "redutor":  "SOFT - STARTER SSW07 WEG",
+                 "serie":  "GD.20290",
+                 "codigoGold":  "GD.20290",
+                 "dataCriacao":  "2026-10-07",
+                 "classe":  "SOFT",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "5171":  {
                  "os":  "5171",
                  "cliente":  "RIO CORRENTE AGRICOLA S/A",
