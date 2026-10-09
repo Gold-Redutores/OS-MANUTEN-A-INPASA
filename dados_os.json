@@ -14926,6 +14926,28 @@
                  "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
+    "6304":  {
+                 "os":  "6304",
+                 "cliente":  "SUPERGASBRAS ENERGIA LTDA",
+                 "redutor":  "MOTOR 3 CV 4 POLOS EXD",
+                 "serie":  "GM.21032",
+                 "codigoGold":  "GM.21032",
+                 "dataCriacao":  "2026-10-09",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6305":  {
+                 "os":  "6305",
+                 "cliente":  "SUPERGASBRAS ENERGIA LTDA",
+                 "redutor":  "MOTOR 7.5 CV 4 POLOS EXD",
+                 "serie":  "GM.21033",
+                 "codigoGold":  "GM.21033",
+                 "dataCriacao":  "2026-10-09",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "5999":  {
                  "os":  "5999",
                  "cliente":  "TAFFAREL LUIZ ALVES",
