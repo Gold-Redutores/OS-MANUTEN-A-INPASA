@@ -1781,6 +1781,17 @@
                  "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
+    "6302":  {
+                 "os":  "6302",
+                 "cliente":  "ATTO AGRICOLA LTDA.",
+                 "redutor":  "DRIVE - INVERSOR DE FREQUENCIA CFW500",
+                 "serie":  "GD.20292",
+                 "codigoGold":  "GD.20292",
+                 "dataCriacao":  "2026-10-09",
+                 "classe":  "DRIVE",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "4877":  {
                  "os":  "4877",
                  "cliente":  "AVANTE TRANSPORTES LTDA",
@@ -3032,7 +3043,7 @@
                  "codigoGold":  "GM.21027",
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6296":  {
