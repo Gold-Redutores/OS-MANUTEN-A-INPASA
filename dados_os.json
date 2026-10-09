@@ -1792,6 +1792,17 @@
                  "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
+    "6303":  {
+                 "os":  "6303",
+                 "cliente":  "ATTO AGRICOLA LTDA.",
+                 "redutor":  "DRIVE - INVERSOR DE FREQUENCIA CFW11",
+                 "serie":  "GD.20293",
+                 "codigoGold":  "GD.20293",
+                 "dataCriacao":  "2026-10-09",
+                 "classe":  "DRIVE",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "4877":  {
                  "os":  "4877",
                  "cliente":  "AVANTE TRANSPORTES LTDA",
