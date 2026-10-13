@@ -392,7 +392,7 @@
                  "codigoGold":  "GM.20162",
                  "dataCriacao":  "2026-04-08",
                  "classe":  "MOTOR",
-                 "fase":  "Equipamento Entregue",
+                 "fase":  "Marcado para descarte",
                  "reducao":  ""
              },
     "5520":  {
@@ -14901,7 +14901,7 @@
                  "codigoGold":  "GM.20930",
                  "dataCriacao":  "2026-08-06",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6177":  {
