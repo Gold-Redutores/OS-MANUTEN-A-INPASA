@@ -11260,7 +11260,7 @@
                  "codigoGold":  "GD.20227",
                  "dataCriacao":  "2026-05-14",
                  "classe":  "DRIVE",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "5213":  {
@@ -13383,7 +13383,7 @@
                  "codigoGold":  "GD.20285",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "DRIVE",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6279":  {
@@ -13405,7 +13405,7 @@
                  "codigoGold":  "GD.20290",
                  "dataCriacao":  "2026-10-07",
                  "classe":  "SOFT",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "5171":  {
