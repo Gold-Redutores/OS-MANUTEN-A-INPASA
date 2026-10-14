@@ -2251,7 +2251,7 @@
                  "codigoGold":  "GM.21019",
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "5708":  {
@@ -3054,7 +3054,7 @@
                  "codigoGold":  "GM.21027",
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6296":  {
@@ -3098,7 +3098,7 @@
                  "codigoGold":  "GM.20974",
                  "dataCriacao":  "2026-09-10",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6288":  {
@@ -13383,7 +13383,7 @@
                  "codigoGold":  "GD.20285",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "DRIVE",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6279":  {
@@ -13394,7 +13394,7 @@
                  "codigoGold":  "GM.21011",
                  "dataCriacao":  "2026-10-01",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6300":  {
@@ -13405,7 +13405,7 @@
                  "codigoGold":  "GD.20290",
                  "dataCriacao":  "2026-10-07",
                  "classe":  "SOFT",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "5171":  {
@@ -14197,7 +14197,7 @@
                  "codigoGold":  "GD.20288",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "DRIVE",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6099":  {
