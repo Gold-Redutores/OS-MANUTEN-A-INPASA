@@ -1723,7 +1723,7 @@
                  "codigoGold":  "GM.21017",
                  "dataCriacao":  "2026-10-02",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "5062":  {
@@ -2251,7 +2251,7 @@
                  "codigoGold":  "GM.21019",
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "5708":  {
@@ -2273,7 +2273,7 @@
                  "codigoGold":  "GM.20613",
                  "dataCriacao":  "2026-02-17",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6163":  {
@@ -2284,7 +2284,7 @@
                  "codigoGold":  "GM.20918",
                  "dataCriacao":  "2026-07-29",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6179":  {
