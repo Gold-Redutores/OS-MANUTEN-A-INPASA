@@ -6434,6 +6434,17 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "6282":  {
+                 "os":  "6282",
+                 "cliente":  "DUAL DUARTE ALBUQUERQUE COM. E IND. LTDA",
+                 "redutor":  "MOTOR 0.75 CV 4 POLOS",
+                 "serie":  "GM.21014",
+                 "codigoGold":  "GM.21014",
+                 "dataCriacao":  "2026-10-02",
+                 "classe":  "MOTOR",
+                 "fase":  "Orçamento Emitido",
+                 "reducao":  ""
+             },
     "6283":  {
                  "os":  "6283",
                  "cliente":  "DUAL DUARTE ALBUQUERQUE COM. E IND. LTDA",
@@ -6506,17 +6517,6 @@
                  "redutor":  "MOTOR 5 CV 2 POLOS EXD",
                  "serie":  "GM.21013",
                  "codigoGold":  "GM.21013",
-                 "dataCriacao":  "2026-10-02",
-                 "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
-                 "reducao":  ""
-             },
-    "6282":  {
-                 "os":  "6282",
-                 "cliente":  "DUAL DUARTE ALBUQUERQUE COM. E IND. LTDA",
-                 "redutor":  "MOTOR 0.75 CV 4 POLOS",
-                 "serie":  "GM.21014",
-                 "codigoGold":  "GM.21014",
                  "dataCriacao":  "2026-10-02",
                  "classe":  "MOTOR",
                  "fase":  "Orçamento Emitido",
@@ -11516,6 +11516,17 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "6279":  {
+                 "os":  "6279",
+                 "cliente":  "NETAFIM BRASIL SISTEMAS E EQUIPAMENTOS DE IRRIGACAO LTDA.",
+                 "redutor":  "MOTOR 30 CV 4 POLOS",
+                 "serie":  "GM.21011",
+                 "codigoGold":  "GM.21011",
+                 "dataCriacao":  "2026-10-01",
+                 "classe":  "MOTOR",
+                 "fase":  "Qualidade Revisada",
+                 "reducao":  ""
+             },
     "6089":  {
                  "os":  "6089",
                  "cliente":  "NETAFIM BRASIL SISTEMAS E EQUIPAMENTOS DE IRRIGACAO LTDA.",
@@ -13384,17 +13395,6 @@
                  "dataCriacao":  "2026-09-25",
                  "classe":  "DRIVE",
                  "fase":  "Orçamento Emitido",
-                 "reducao":  ""
-             },
-    "6279":  {
-                 "os":  "6279",
-                 "cliente":  "RIO CORRENTE AGRICOLA S/A",
-                 "redutor":  "MOTOR 30 CV 4 POLOS",
-                 "serie":  "GM.21011",
-                 "codigoGold":  "GM.21011",
-                 "dataCriacao":  "2026-10-01",
-                 "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6300":  {
