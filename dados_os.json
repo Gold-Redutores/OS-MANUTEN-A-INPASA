@@ -1338,7 +1338,7 @@
                  "codigoGold":  "GM.21001",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6258":  {
@@ -1382,7 +1382,7 @@
                  "codigoGold":  "GM.21003",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6262":  {
@@ -1647,6 +1647,17 @@
                  "dataCriacao":  "2026-01-29",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "6306":  {
+                 "os":  "6306",
+                 "cliente":  "AMAGGI EXPORTACAO E IMPORTACAO LTDA",
+                 "redutor":  "MOTOR SEW EURODRIVE",
+                 "serie":  "GM.21034",
+                 "codigoGold":  "GM.21034",
+                 "dataCriacao":  "2026-10-15",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "5269":  {
@@ -11260,7 +11271,7 @@
                  "codigoGold":  "GD.20227",
                  "dataCriacao":  "2026-05-14",
                  "classe":  "DRIVE",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "5213":  {
