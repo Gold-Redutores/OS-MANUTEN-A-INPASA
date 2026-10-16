@@ -7094,6 +7094,17 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "6307":  {
+                 "os":  "6307",
+                 "cliente":  "DUAL DUARTE ALBUQUERQUE COMERCIO E INDUSTRIA LTDA",
+                 "redutor":  "MOTOR 6 CV 4 POLOS EXD",
+                 "serie":  "GM.21035",
+                 "codigoGold":  "GM.21035",
+                 "dataCriacao":  "2026-10-16",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "6017":  {
                  "os":  "6017",
                  "cliente":  "DUAL DUARTE ALBUQUERQUE COMERCIO E INDUSTRIA LTDA",
