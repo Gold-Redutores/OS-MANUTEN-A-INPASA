@@ -8282,6 +8282,17 @@
                  "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
+    "6241":  {
+                 "os":  "6241",
+                 "cliente":  "INDUSTRIA DE PRODUTOS CERAMICOS FAAT LTDA",
+                 "redutor":  "DRIVE INVERSOR DE FREQUENCIA 6.1 A",
+                 "serie":  "GD.20280",
+                 "codigoGold":  "GD.20280",
+                 "dataCriacao":  "2026-09-11",
+                 "classe":  "DRIVE",
+                 "fase":  "Orçamento Aprovado",
+                 "reducao":  ""
+             },
     "6242":  {
                  "os":  "6242",
                  "cliente":  "INDUSTRIA DE PRODUTOS CERAMICOS FAAT LTDA",
@@ -8346,17 +8357,6 @@
                  "dataCriacao":  "2026-08-05",
                  "classe":  "DRIVE",
                  "fase":  "Equipamento Entregue",
-                 "reducao":  ""
-             },
-    "6241":  {
-                 "os":  "6241",
-                 "cliente":  "INDUSTRIA DE PRODUTOS CERAMICOS FAAT LTDA",
-                 "redutor":  "DRIVE INVERSOR DE FREQUENCIA 6.1 A",
-                 "serie":  "GD.20280",
-                 "codigoGold":  "GD.20280",
-                 "dataCriacao":  "2026-09-11",
-                 "classe":  "DRIVE",
-                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "5177":  {
