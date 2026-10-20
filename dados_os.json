@@ -8546,6 +8546,28 @@
                  "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
+    "6346":  {
+                 "os":  "6346",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR - 7597160",
+                 "serie":  "GR.20265",
+                 "codigoGold":  "GR.20265",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6347":  {
+                 "os":  "6347",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 5 CV 4 POLOS",
+                 "serie":  "GM.21057",
+                 "codigoGold":  "GM.21057",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "6336":  {
                  "os":  "6336",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
@@ -14593,7 +14615,7 @@
                  "codigoGold":  "GD.20249",
                  "dataCriacao":  "2026-07-07",
                  "classe":  "DRIVE",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6136":  {
@@ -14615,7 +14637,7 @@
                  "codigoGold":  "GD.20284",
                  "dataCriacao":  "2026-09-24",
                  "classe":  "DRIVE",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6274":  {
