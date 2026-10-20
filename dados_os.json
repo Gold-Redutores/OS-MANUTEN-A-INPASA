@@ -8524,6 +8524,17 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "6344":  {
+                 "os":  "6344",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 5 CV 4 POLOS",
+                 "serie":  "GM.21056",
+                 "codigoGold":  "GM.21056",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "6336":  {
                  "os":  "6336",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
