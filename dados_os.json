@@ -1679,7 +1679,7 @@
                  "codigoGold":  "GM.21034",
                  "dataCriacao":  "2026-10-15",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "5269":  {
@@ -8532,6 +8532,17 @@
                  "codigoGold":  "GM.21056",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6345":  {
+                 "os":  "6345",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR - 7596331",
+                 "serie":  "GR.20264",
+                 "codigoGold":  "GR.20264",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "REDUTOR",
                  "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
