@@ -142,6 +142,17 @@
                  "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
+    "6339":  {
+                 "os":  "6339",
+                 "cliente":  "ADM DO BRASIL LTDA",
+                 "redutor":  "MOTOR 450 CV 8 POLOS",
+                 "serie":  "GM.21054",
+                 "codigoGold":  "GM.21054",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "6229":  {
                  "os":  "6229",
                  "cliente":  "ADM DO BRASIL LTDA",
@@ -1745,7 +1756,7 @@
                  "codigoGold":  "GM.21017",
                  "dataCriacao":  "2026-10-02",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "5062":  {
@@ -8546,6 +8557,39 @@
                  "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
+    "6341":  {
+                 "os":  "6341",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR - 7596361",
+                 "serie":  "GR.20262",
+                 "codigoGold":  "GR.20262",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6342":  {
+                 "os":  "6342",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR - 7597144",
+                 "serie":  "GR.20263",
+                 "codigoGold":  "GR.20263",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6343":  {
+                 "os":  "6343",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 0.50 CV 4 POLOS",
+                 "serie":  "GM.21055",
+                 "codigoGold":  "GM.21055",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "6330":  {
                  "os":  "6330",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
@@ -15232,6 +15276,17 @@
                  "dataCriacao":  "2026-08-03",
                  "classe":  "DRIVE",
                  "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "6340":  {
+                 "os":  "6340",
+                 "cliente":  "SULINA COMERCIO DE OLEOS LTDA",
+                 "redutor":  "DRIVE INVERSOR DE FREQUENCIA 70 A",
+                 "serie":  "GD.20262",
+                 "codigoGold":  "GD.20262",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "DRIVE",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "6174":  {
