@@ -8535,6 +8535,17 @@
                  "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
+    "6338":  {
+                 "os":  "6338",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 1 CV 4 POLOS MOD. 80",
+                 "serie":  "GM.21053",
+                 "codigoGold":  "GM.21053",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "6330":  {
                  "os":  "6330",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
@@ -15539,7 +15550,7 @@
                  "codigoGold":  "GM.21031",
                  "dataCriacao":  "2026-10-07",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "5837":  {
