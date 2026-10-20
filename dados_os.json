@@ -139,7 +139,7 @@
                  "codigoGold":  "GM.21036",
                  "dataCriacao":  "2026-10-16",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6229":  {
@@ -3043,7 +3043,7 @@
                  "codigoGold":  "GM.21024",
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6293":  {
@@ -3989,7 +3989,7 @@
                  "codigoGold":  "GM.20647",
                  "dataCriacao":  "2026-02-11",
                  "classe":  "MOTOR",
-                 "fase":  "Equipamento Entregue",
+                 "fase":  "Equipamento Sem Defeito",
                  "reducao":  ""
              },
     "5747":  {
@@ -5320,7 +5320,7 @@
                  "codigoGold":  "GM.20526",
                  "dataCriacao":  "2026-02-05",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "5616":  {
@@ -6992,7 +6992,7 @@
                  "codigoGold":  "GD.20287",
                  "dataCriacao":  "2026-09-29",
                  "classe":  "DRIVE",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6273":  {
@@ -7003,7 +7003,7 @@
                  "codigoGold":  "GD.20286",
                  "dataCriacao":  "2026-09-28",
                  "classe":  "DRIVE",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6182":  {
@@ -7025,7 +7025,7 @@
                  "codigoGold":  "GD.20276",
                  "dataCriacao":  "2026-08-27",
                  "classe":  "DRIVE",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6265":  {
@@ -8513,6 +8513,259 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "6330":  {
+                 "os":  "6330",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 3 CV 4 POLOS WEG",
+                 "serie":  "GM.21049",
+                 "codigoGold":  "GM.21049",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6331":  {
+                 "os":  "6331",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR - 7596396",
+                 "serie":  "GR.20258",
+                 "codigoGold":  "GR.20258",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6332":  {
+                 "os":  "6332",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 1.5 CV 4 POLOS WEG",
+                 "serie":  "GM.21050",
+                 "codigoGold":  "GM.21050",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6333":  {
+                 "os":  "6333",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR - 7596328",
+                 "serie":  "GR.20259",
+                 "codigoGold":  "GR.20259",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6334":  {
+                 "os":  "6334",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 1 CV 4 POLOS",
+                 "serie":  "GM.21051",
+                 "codigoGold":  "GM.21051",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6324":  {
+                 "os":  "6324",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR SEM PLACA - 7597161",
+                 "serie":  "GM.21045",
+                 "codigoGold":  "GM.21045",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6325":  {
+                 "os":  "6325",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR - 7597170",
+                 "serie":  "GR.20255",
+                 "codigoGold":  "GR.20255",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6326":  {
+                 "os":  "6326",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 3 CV 4 POLOS",
+                 "serie":  "GM.21046",
+                 "codigoGold":  "GM.21046",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6327":  {
+                 "os":  "6327",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR WEG - 7596388",
+                 "serie":  "GR.20256",
+                 "codigoGold":  "GR.20256",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6328":  {
+                 "os":  "6328",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 3 CV 4 POLOS WEG",
+                 "serie":  "GM.21048",
+                 "codigoGold":  "GM.21048",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6329":  {
+                 "os":  "6329",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR WEG - 288292",
+                 "serie":  "GR.20257",
+                 "codigoGold":  "GR.20257",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6318":  {
+                 "os":  "6318",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 0.5 CV 2 POLOS",
+                 "serie":  "GM.21041",
+                 "codigoGold":  "GM.21041",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6319":  {
+                 "os":  "6319",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 3 CV 4 POLOS",
+                 "serie":  "GM.21042",
+                 "codigoGold":  "GM.21042",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6320":  {
+                 "os":  "6320",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR WEG - 7596334",
+                 "serie":  "GR.20253",
+                 "codigoGold":  "GR.20253",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6321":  {
+                 "os":  "6321",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR WEG - 7597145",
+                 "serie":  "GR.20254",
+                 "codigoGold":  "GR.20254",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6322":  {
+                 "os":  "6322",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 5 CV 4 POLOS",
+                 "serie":  "GM.21043",
+                 "codigoGold":  "GM.21043",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6323":  {
+                 "os":  "6323",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 3 CV 4 POLOS",
+                 "serie":  "GM.21044",
+                 "codigoGold":  "GM.21044",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6312":  {
+                 "os":  "6312",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR WEG 3 CV 4 POLOS",
+                 "serie":  "GM.21038",
+                 "codigoGold":  "GM.21038",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6313":  {
+                 "os":  "6313",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR C62344NA00G4W",
+                 "serie":  "GR.20250",
+                 "codigoGold":  "GR.20250",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6314":  {
+                 "os":  "6314",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR WEG - 7596348",
+                 "serie":  "GR.20251",
+                 "codigoGold":  "GR.20251",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6315":  {
+                 "os":  "6315",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 5 CV 4 POLOS",
+                 "serie":  "GM.21039",
+                 "codigoGold":  "GM.21039",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6316":  {
+                 "os":  "6316",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 3 CV 4 POLOS",
+                 "serie":  "GM.21040",
+                 "codigoGold":  "GM.21040",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6317":  {
+                 "os":  "6317",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR WEG - 7597102",
+                 "serie":  "GR.20252",
+                 "codigoGold":  "GR.20252",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "6240":  {
                  "os":  "6240",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
@@ -8544,6 +8797,39 @@
                  "dataCriacao":  "2026-09-29",
                  "classe":  "REDUTOR",
                  "fase":  "Aguardando Peças",
+                 "reducao":  ""
+             },
+    "6309":  {
+                 "os":  "6309",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR  - 7597132",
+                 "serie":  "GR.20248",
+                 "codigoGold":  "GR.20248",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6310":  {
+                 "os":  "6310",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "MOTOR 3 CV 4 POLOS",
+                 "serie":  "GM.21037",
+                 "codigoGold":  "GM.21037",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6311":  {
+                 "os":  "6311",
+                 "cliente":  "INPASA AGROINDUSTRIAL S/A",
+                 "redutor":  "REDUTOR WEG - 7597128",
+                 "serie":  "GR.20249",
+                 "codigoGold":  "GR.20249",
+                 "dataCriacao":  "2026-10-19",
+                 "classe":  "REDUTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "6152":  {
