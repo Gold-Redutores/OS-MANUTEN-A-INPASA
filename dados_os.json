@@ -1858,6 +1858,17 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "6356":  {
+                 "os":  "6356",
+                 "cliente":  "BE8 ALTO ARAGUAIA LTDA",
+                 "redutor":  "INVERSOR CF500",
+                 "serie":  "GD.20295",
+                 "codigoGold":  "GD.20295",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "INVERSOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "5321":  {
                  "os":  "5321",
                  "cliente":  "BE8 NOVA MARILANDIA LTDA",
