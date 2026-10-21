@@ -2350,7 +2350,7 @@
                  "codigoGold":  "GM.20958",
                  "dataCriacao":  "2026-08-26",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6220":  {
@@ -2361,7 +2361,7 @@
                  "codigoGold":  "GM.20959",
                  "dataCriacao":  "2026-08-26",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6287":  {
@@ -3175,7 +3175,7 @@
                  "codigoGold":  "GM.21026",
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6295":  {
@@ -8648,7 +8648,7 @@
     "6345":  {
                  "os":  "6345",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR - 7596331",
+                 "redutor":  "REDUTOR - 7596331 - C62",
                  "serie":  "GR.20264",
                  "codigoGold":  "GR.20264",
                  "dataCriacao":  "2026-10-20",
@@ -8659,7 +8659,7 @@
     "6346":  {
                  "os":  "6346",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR - 7597160",
+                 "redutor":  "REDUTOR - 7597160 - C62",
                  "serie":  "GR.20265",
                  "codigoGold":  "GR.20265",
                  "dataCriacao":  "2026-10-20",
@@ -8736,7 +8736,7 @@
     "6341":  {
                  "os":  "6341",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR - 7596361",
+                 "redutor":  "REDUTOR - 7596361 - M08 DUPLO",
                  "serie":  "GR.20262",
                  "codigoGold":  "GR.20262",
                  "dataCriacao":  "2026-10-19",
@@ -15473,7 +15473,7 @@
                  "codigoGold":  "GD.20262",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "DRIVE",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6174":  {
@@ -15517,7 +15517,7 @@
                  "codigoGold":  "GM.20931",
                  "dataCriacao":  "2026-08-06",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6178":  {
@@ -15528,7 +15528,7 @@
                  "codigoGold":  "GM.20932",
                  "dataCriacao":  "2026-08-06",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6304":  {
@@ -16078,7 +16078,7 @@
                  "codigoGold":  "GM.20904",
                  "dataCriacao":  "2026-07-10",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "5084":  {
