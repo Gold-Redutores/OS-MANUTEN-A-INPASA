@@ -3164,7 +3164,7 @@
                  "codigoGold":  "GM.21025",
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6294":  {
@@ -3197,7 +3197,7 @@
                  "codigoGold":  "GM.21028",
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "5196":  {
@@ -8714,7 +8714,7 @@
     "6337":  {
                  "os":  "6337",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR - 7597190",
+                 "redutor":  "REDUTOR - 7597190 - V56",
                  "serie":  "GR.20261",
                  "codigoGold":  "GR.20261",
                  "dataCriacao":  "2026-10-20",
@@ -8780,7 +8780,7 @@
     "6331":  {
                  "os":  "6331",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR - 7596396",
+                 "redutor":  "REDUTOR - 7596396 - C62",
                  "serie":  "GR.20258",
                  "codigoGold":  "GR.20258",
                  "dataCriacao":  "2026-10-20",
@@ -8802,7 +8802,7 @@
     "6333":  {
                  "os":  "6333",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR - 7596328",
+                 "redutor":  "REDUTOR - 7596328 - V56",
                  "serie":  "GR.20259",
                  "codigoGold":  "GR.20259",
                  "dataCriacao":  "2026-10-20",
@@ -8824,7 +8824,7 @@
     "6335":  {
                  "os":  "6335",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR - 7597135",
+                 "redutor":  "REDUTOR - 7597135 - V56",
                  "serie":  "GR.20260",
                  "codigoGold":  "GR.20260",
                  "dataCriacao":  "2026-10-20",
@@ -8846,7 +8846,7 @@
     "6325":  {
                  "os":  "6325",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR - 7597170",
+                 "redutor":  "REDUTOR - 7597170 - V58",
                  "serie":  "GR.20255",
                  "codigoGold":  "GR.20255",
                  "dataCriacao":  "2026-10-20",
@@ -8868,7 +8868,7 @@
     "6327":  {
                  "os":  "6327",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR WEG - 7596388",
+                 "redutor":  "REDUTOR WEG - 7596388 - V58",
                  "serie":  "GR.20256",
                  "codigoGold":  "GR.20256",
                  "dataCriacao":  "2026-10-20",
@@ -8890,7 +8890,7 @@
     "6329":  {
                  "os":  "6329",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR WEG - 288292",
+                 "redutor":  "REDUTOR WEG - 288292 - V58",
                  "serie":  "GR.20257",
                  "codigoGold":  "GR.20257",
                  "dataCriacao":  "2026-10-20",
@@ -8923,7 +8923,7 @@
     "6320":  {
                  "os":  "6320",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR WEG - 7596334",
+                 "redutor":  "REDUTOR WEG - 7596334 - C62",
                  "serie":  "GR.20253",
                  "codigoGold":  "GR.20253",
                  "dataCriacao":  "2026-10-19",
@@ -8934,7 +8934,7 @@
     "6321":  {
                  "os":  "6321",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR WEG - 7597145",
+                 "redutor":  "REDUTOR WEG - 7597145 - V58",
                  "serie":  "GR.20254",
                  "codigoGold":  "GR.20254",
                  "dataCriacao":  "2026-10-19",
@@ -8989,7 +8989,7 @@
     "6314":  {
                  "os":  "6314",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR WEG - 7596348",
+                 "redutor":  "REDUTOR WEG - 7596348 - V58",
                  "serie":  "GR.20251",
                  "codigoGold":  "GR.20251",
                  "dataCriacao":  "2026-10-19",
@@ -9022,7 +9022,7 @@
     "6317":  {
                  "os":  "6317",
                  "cliente":  "INPASA AGROINDUSTRIAL S/A",
-                 "redutor":  "REDUTOR WEG - 7597102",
+                 "redutor":  "REDUTOR WEG - 7597102 - V58",
                  "serie":  "GR.20252",
                  "codigoGold":  "GR.20252",
                  "dataCriacao":  "2026-10-19",
