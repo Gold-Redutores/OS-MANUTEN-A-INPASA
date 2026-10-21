@@ -2243,6 +2243,39 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "6352":  {
+                 "os":  "6352",
+                 "cliente":  "BUNGE ALIMENTOS S/A",
+                 "redutor":  "MOTOR 60 CV 6 POLOS",
+                 "serie":  "GM.21061",
+                 "codigoGold":  "GM.21061",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6353":  {
+                 "os":  "6353",
+                 "cliente":  "BUNGE ALIMENTOS S/A",
+                 "redutor":  "MOTOR 75 CV 4 POLOS",
+                 "serie":  "GM.21062",
+                 "codigoGold":  "GM.21062",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6354":  {
+                 "os":  "6354",
+                 "cliente":  "BUNGE ALIMENTOS S/A",
+                 "redutor":  "MOTOR 75 CV 4 POLOS",
+                 "serie":  "GM.21063",
+                 "codigoGold":  "GM.21063",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "6218":  {
                  "os":  "6218",
                  "cliente":  "BUNGE ALIMENTOS S/A",
@@ -2285,6 +2318,17 @@
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "6351":  {
+                 "os":  "6351",
+                 "cliente":  "BUNGE ALIMENTOS S/A",
+                 "redutor":  "MOTOR 40 CV 4 POLOS",
+                 "serie":  "GM.21060",
+                 "codigoGold":  "GM.21060",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "5708":  {
@@ -14682,6 +14726,17 @@
                  "dataCriacao":  "2026-09-25",
                  "classe":  "DRIVE",
                  "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "6355":  {
+                 "os":  "6355",
+                 "cliente":  "SANEAR-SERVICO DE SANEAMENTO AMBIENTAL DE RONDONOPOLIS",
+                 "redutor":  "INVERSOR DE FREQUENCIA CFW11",
+                 "serie":  "GD.20294",
+                 "codigoGold":  "GD.20294",
+                 "dataCriacao":  "2026-10-20",
+                 "classe":  "INVERSOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "6099":  {
