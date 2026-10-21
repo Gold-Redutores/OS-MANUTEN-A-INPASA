@@ -139,7 +139,7 @@
                  "codigoGold":  "GM.21036",
                  "dataCriacao":  "2026-10-16",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6339":  {
@@ -7113,7 +7113,7 @@
                  "codigoGold":  "GD.20286",
                  "dataCriacao":  "2026-09-28",
                  "classe":  "DRIVE",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6182":  {
@@ -7135,7 +7135,7 @@
                  "codigoGold":  "GD.20276",
                  "dataCriacao":  "2026-08-27",
                  "classe":  "DRIVE",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6265":  {
