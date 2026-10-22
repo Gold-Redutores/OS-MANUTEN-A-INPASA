@@ -1811,7 +1811,7 @@
                  "codigoGold":  "GD.20291",
                  "dataCriacao":  "2026-10-09",
                  "classe":  "SOFT",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6302":  {
@@ -1833,7 +1833,7 @@
                  "codigoGold":  "GD.20293",
                  "dataCriacao":  "2026-10-09",
                  "classe":  "DRIVE",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "4877":  {
@@ -2306,7 +2306,7 @@
                  "codigoGold":  "GM.21061",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6353":  {
@@ -2317,7 +2317,7 @@
                  "codigoGold":  "GM.21062",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6354":  {
@@ -2328,7 +2328,7 @@
                  "codigoGold":  "GM.21063",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6218":  {
@@ -2383,7 +2383,7 @@
                  "codigoGold":  "GM.21060",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "5708":  {
@@ -8642,7 +8642,7 @@
                  "codigoGold":  "GM.21056",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6345":  {
@@ -8763,7 +8763,7 @@
                  "codigoGold":  "GM.21055",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6330":  {
@@ -8906,7 +8906,7 @@
                  "codigoGold":  "GM.21041",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6319":  {
@@ -9005,7 +9005,7 @@
                  "codigoGold":  "GM.21039",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6316":  {
