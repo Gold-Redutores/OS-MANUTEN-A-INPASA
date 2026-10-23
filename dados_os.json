@@ -150,7 +150,7 @@
                  "codigoGold":  "GM.21054",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6229":  {
@@ -11546,7 +11546,7 @@
                  "codigoGold":  "GM.20999",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "4918":  {
