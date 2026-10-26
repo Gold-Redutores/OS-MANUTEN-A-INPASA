@@ -1822,7 +1822,7 @@
                  "codigoGold":  "GD.20292",
                  "dataCriacao":  "2026-10-09",
                  "classe":  "DRIVE",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6303":  {
@@ -2306,7 +2306,7 @@
                  "codigoGold":  "GM.21061",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6353":  {
@@ -2317,7 +2317,7 @@
                  "codigoGold":  "GM.21062",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6354":  {
@@ -2328,7 +2328,29 @@
                  "codigoGold":  "GM.21063",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Qualidade Revisada",
+                 "reducao":  ""
+             },
+    "6361":  {
+                 "os":  "6361",
+                 "cliente":  "BUNGE ALIMENTOS S/A",
+                 "redutor":  "MOTOR 40 CV 4 POLOS",
+                 "serie":  "GM.21066",
+                 "codigoGold":  "GM.21066",
+                 "dataCriacao":  "2026-10-23",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6362":  {
+                 "os":  "6362",
+                 "cliente":  "BUNGE ALIMENTOS S/A",
+                 "redutor":  "MOTOR 30 CV 4 POLOS",
+                 "serie":  "GM.21067",
+                 "codigoGold":  "GM.21067",
+                 "dataCriacao":  "2026-10-23",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "6218":  {
@@ -2383,7 +2405,7 @@
                  "codigoGold":  "GM.21060",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "5708":  {
@@ -3132,6 +3154,39 @@
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
                  "fase":  "Orçamento Emitido",
+                 "reducao":  ""
+             },
+    "6363":  {
+                 "os":  "6363",
+                 "cliente":  "CARGILL AGRICOLA S.A",
+                 "redutor":  "MOTOR 25 CV 2 POLOS",
+                 "serie":  "GM.21068",
+                 "codigoGold":  "GM.21068",
+                 "dataCriacao":  "2026-10-23",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6364":  {
+                 "os":  "6364",
+                 "cliente":  "CARGILL AGRICOLA S.A",
+                 "redutor":  "MOTOR 20 CV 4 POLOS",
+                 "serie":  "GM.21069",
+                 "codigoGold":  "GM.21069",
+                 "dataCriacao":  "2026-10-24",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6365":  {
+                 "os":  "6365",
+                 "cliente":  "CARGILL AGRICOLA S.A",
+                 "redutor":  "MOTOR 30 CV 4 POLOS EXT",
+                 "serie":  "GM.21070",
+                 "codigoGold":  "GM.21070",
+                 "dataCriacao":  "2026-10-23",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "6291":  {
@@ -6574,7 +6629,7 @@
                  "codigoGold":  "GM.21014",
                  "dataCriacao":  "2026-10-02",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6283":  {
@@ -8708,7 +8763,7 @@
                  "codigoGold":  "GM.21052",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6337":  {
@@ -8730,7 +8785,7 @@
                  "codigoGold":  "GM.21053",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6341":  {
@@ -8796,7 +8851,7 @@
                  "codigoGold":  "GM.21050",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6333":  {
@@ -8818,7 +8873,7 @@
                  "codigoGold":  "GM.21051",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6335":  {
@@ -9082,7 +9137,7 @@
                  "codigoGold":  "GM.21037",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6311":  {
@@ -12000,6 +12055,17 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "6369":  {
+                 "os":  "6369",
+                 "cliente":  "MOSAIC FERTILIZANTES DO BRASIL LTDA.",
+                 "redutor":  "MOTOR 20 CV 4 POLOS WEG",
+                 "serie":  "GM.21074",
+                 "codigoGold":  "GM.21074",
+                 "dataCriacao":  "2026-10-24",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "6167":  {
                  "os":  "6167",
                  "cliente":  "MOSAIC FERTILIZANTES DO BRASIL LTDA.",
@@ -12031,6 +12097,39 @@
                  "dataCriacao":  "2026-08-31",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "6366":  {
+                 "os":  "6366",
+                 "cliente":  "MOSAIC FERTILIZANTES DO BRASIL LTDA.",
+                 "redutor":  "MOTOR - 15 CV 4 POLOS",
+                 "serie":  "GM.21071",
+                 "codigoGold":  "GM.21071",
+                 "dataCriacao":  "2026-10-24",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6367":  {
+                 "os":  "6367",
+                 "cliente":  "MOSAIC FERTILIZANTES DO BRASIL LTDA.",
+                 "redutor":  "MOTOR 15 CV 4 POLOS",
+                 "serie":  "GM.21072",
+                 "codigoGold":  "GM.21072",
+                 "dataCriacao":  "2026-10-24",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6368":  {
+                 "os":  "6368",
+                 "cliente":  "MOSAIC FERTILIZANTES DO BRASIL LTDA.",
+                 "redutor":  "MOTOR 20 CV 4 POLOS",
+                 "serie":  "GM.21073",
+                 "codigoGold":  "GM.21073",
+                 "dataCriacao":  "2026-10-24",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "5458":  {
