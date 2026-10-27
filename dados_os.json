@@ -87,6 +87,17 @@
                  "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
+    "6370":  {
+                 "os":  "6370",
+                 "cliente":  "ADM DO BRASIL LTDA",
+                 "redutor":  "MOTOR WEG 450 CV 8 POLOS",
+                 "serie":  "GM.21075",
+                 "codigoGold":  "GM.21075",
+                 "dataCriacao":  "2026-10-26",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
     "6248":  {
                  "os":  "6248",
                  "cliente":  "ADM DO BRASIL LTDA",
@@ -5425,7 +5436,7 @@
     "5622":  {
                  "os":  "5622",
                  "cliente":  "COFCO INTERNATIONAL BRASIL S.A.",
-                 "redutor":  "MOTOR 20 CV 3F 4 POLOS",
+                 "redutor":  "MOTOR 2.0 CV 3F 4 POLOS",
                  "serie":  "GM.20533",
                  "codigoGold":  "GM.20533",
                  "dataCriacao":  "2026-02-05",
@@ -6629,7 +6640,7 @@
                  "codigoGold":  "GM.21014",
                  "dataCriacao":  "2026-10-02",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6283":  {
@@ -8818,7 +8829,7 @@
                  "codigoGold":  "GM.21055",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6330":  {
@@ -8829,7 +8840,7 @@
                  "codigoGold":  "GM.21049",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6331":  {
@@ -8917,7 +8928,7 @@
                  "codigoGold":  "GM.21046",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6327":  {
@@ -8939,7 +8950,7 @@
                  "codigoGold":  "GM.21048",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6329":  {
@@ -8972,7 +8983,7 @@
                  "codigoGold":  "GM.21042",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6320":  {
@@ -9016,7 +9027,7 @@
                  "codigoGold":  "GM.21044",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6312":  {
@@ -9027,7 +9038,7 @@
                  "codigoGold":  "GM.21038",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6313":  {
@@ -9071,7 +9082,7 @@
                  "codigoGold":  "GM.21040",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6317":  {
