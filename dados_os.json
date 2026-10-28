@@ -95,7 +95,7 @@
                  "codigoGold":  "GM.21075",
                  "dataCriacao":  "2026-10-26",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6248":  {
@@ -1822,7 +1822,7 @@
                  "codigoGold":  "GD.20291",
                  "dataCriacao":  "2026-10-09",
                  "classe":  "SOFT",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6302":  {
@@ -1833,7 +1833,7 @@
                  "codigoGold":  "GD.20292",
                  "dataCriacao":  "2026-10-09",
                  "classe":  "DRIVE",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6303":  {
@@ -1844,7 +1844,7 @@
                  "codigoGold":  "GD.20293",
                  "dataCriacao":  "2026-10-09",
                  "classe":  "DRIVE",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "4877":  {
@@ -1899,7 +1899,7 @@
                  "codigoGold":  "GD.20297",
                  "dataCriacao":  "2026-10-21",
                  "classe":  "INVERSOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6359":  {
@@ -2317,7 +2317,7 @@
                  "codigoGold":  "GM.21061",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6353":  {
@@ -2328,7 +2328,7 @@
                  "codigoGold":  "GM.21062",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6354":  {
@@ -2339,7 +2339,7 @@
                  "codigoGold":  "GM.21063",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6361":  {
@@ -2350,7 +2350,7 @@
                  "codigoGold":  "GM.21066",
                  "dataCriacao":  "2026-10-23",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6362":  {
@@ -2360,6 +2360,17 @@
                  "serie":  "GM.21067",
                  "codigoGold":  "GM.21067",
                  "dataCriacao":  "2026-10-23",
+                 "classe":  "MOTOR",
+                 "fase":  "Conclusão da Análise",
+                 "reducao":  ""
+             },
+    "6371":  {
+                 "os":  "6371",
+                 "cliente":  "BUNGE ALIMENTOS S/A",
+                 "redutor":  "MOTOR 300 CV 4 POLOS WEG",
+                 "serie":  "GM.21076",
+                 "codigoGold":  "GM.21076",
+                 "dataCriacao":  "2026-10-27",
                  "classe":  "MOTOR",
                  "fase":  "Aguardando Análise",
                  "reducao":  ""
@@ -2383,7 +2394,7 @@
                  "codigoGold":  "GM.20958",
                  "dataCriacao":  "2026-08-26",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6220":  {
@@ -2394,7 +2405,7 @@
                  "codigoGold":  "GM.20959",
                  "dataCriacao":  "2026-08-26",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6287":  {
@@ -2416,7 +2427,7 @@
                  "codigoGold":  "GM.21060",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "5708":  {
@@ -2878,7 +2889,7 @@
                  "codigoGold":  "GM.20016",
                  "dataCriacao":  "2026-03-19",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "5491":  {
@@ -3010,7 +3021,7 @@
                  "codigoGold":  "GM.20870",
                  "dataCriacao":  "2026-06-15",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6146":  {
@@ -3307,7 +3318,7 @@
                  "codigoGold":  "GM.21020",
                  "dataCriacao":  "2026-10-06",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6289":  {
@@ -6684,7 +6695,7 @@
                  "codigoGold":  "GM.20950",
                  "dataCriacao":  "2026-08-17",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6205":  {
@@ -6695,7 +6706,7 @@
                  "codigoGold":  "GM.20951",
                  "dataCriacao":  "2026-08-17",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6280":  {
@@ -6761,7 +6772,7 @@
                  "codigoGold":  "GM.20946",
                  "dataCriacao":  "2026-08-17",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6201":  {
@@ -6772,7 +6783,7 @@
                  "codigoGold":  "GM.20947",
                  "dataCriacao":  "2026-08-17",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6202":  {
@@ -6783,7 +6794,7 @@
                  "codigoGold":  "GM.20948",
                  "dataCriacao":  "2026-08-17",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6078":  {
@@ -14264,6 +14275,17 @@
                  "dataCriacao":  "2026-08-20",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "6372":  {
+                 "os":  "6372",
+                 "cliente":  "RUMO MALHA NORTE S.A",
+                 "redutor":  "MOTOR 1 CV 2 POLOS EXD",
+                 "serie":  "GM.21077",
+                 "codigoGold":  "GM.21077",
+                 "dataCriacao":  "2026-10-27",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "5797":  {
