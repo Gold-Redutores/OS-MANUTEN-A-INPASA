@@ -249,7 +249,7 @@
                  "codigoGold":  "GM.20940",
                  "dataCriacao":  "2026-08-12",
                  "classe":  "MOTOR",
-                 "fase":  "EM LINHA DE PRODUÇÃO",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6193":  {
@@ -1877,7 +1877,7 @@
                  "codigoGold":  "GD.20295",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "INVERSOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6357":  {
@@ -8730,7 +8730,7 @@
                  "codigoGold":  "GR.20264",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6346":  {
@@ -8741,7 +8741,7 @@
                  "codigoGold":  "GR.20265",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6347":  {
@@ -8774,7 +8774,7 @@
                  "codigoGold":  "GR.20266",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6336":  {
@@ -8796,7 +8796,7 @@
                  "codigoGold":  "GR.20261",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6338":  {
@@ -8818,7 +8818,7 @@
                  "codigoGold":  "GR.20262",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6342":  {
@@ -8829,7 +8829,7 @@
                  "codigoGold":  "GR.20263",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6343":  {
@@ -8862,7 +8862,7 @@
                  "codigoGold":  "GR.20258",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6332":  {
@@ -8884,7 +8884,7 @@
                  "codigoGold":  "GR.20259",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6334":  {
@@ -8906,7 +8906,7 @@
                  "codigoGold":  "GR.20260",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6324":  {
@@ -8928,7 +8928,7 @@
                  "codigoGold":  "GR.20255",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6326":  {
@@ -8950,7 +8950,7 @@
                  "codigoGold":  "GR.20256",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6328":  {
@@ -8972,7 +8972,7 @@
                  "codigoGold":  "GR.20257",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6318":  {
@@ -9005,7 +9005,7 @@
                  "codigoGold":  "GR.20253",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6321":  {
@@ -9016,7 +9016,7 @@
                  "codigoGold":  "GR.20254",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6322":  {
@@ -9060,7 +9060,7 @@
                  "codigoGold":  "GR.20250",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6314":  {
@@ -9071,7 +9071,7 @@
                  "codigoGold":  "GR.20251",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6315":  {
@@ -9104,7 +9104,7 @@
                  "codigoGold":  "GR.20252",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6240":  {
@@ -9126,7 +9126,7 @@
                  "codigoGold":  "GM.21009",
                  "dataCriacao":  "2026-09-28",
                  "classe":  "MOTOR",
-                 "fase":  "Equipamento Sem Defeito",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6270":  {
@@ -9137,7 +9137,7 @@
                  "codigoGold":  "GR.20150",
                  "dataCriacao":  "2026-09-29",
                  "classe":  "REDUTOR",
-                 "fase":  "Aguardando Peças",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "6309":  {
@@ -9148,7 +9148,7 @@
                  "codigoGold":  "GR.20248",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6310":  {
@@ -9170,7 +9170,7 @@
                  "codigoGold":  "GR.20249",
                  "dataCriacao":  "2026-10-19",
                  "classe":  "REDUTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Aguardando Peças",
                  "reducao":  ""
              },
     "6152":  {
@@ -9225,7 +9225,7 @@
                  "codigoGold":  "GR.20068",
                  "dataCriacao":  "2026-09-02",
                  "classe":  "REDUTOR",
-                 "fase":  "Aguardando Peças",
+                 "fase":  "EM LINHA DE PRODUÇÃO",
                  "reducao":  ""
              },
     "6237":  {
@@ -11623,7 +11623,7 @@
                  "codigoGold":  "GM.20999",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "MOTOR",
-                 "fase":  "Conclusão da Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "4918":  {
@@ -13417,6 +13417,28 @@
                  "dataCriacao":  "2026-03-30",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "6374":  {
+                 "os":  "6374",
+                 "cliente":  "OLEOPLAN RONDONIA INDUSTRIA DE BIOCOMBUSTIVEL LTDA",
+                 "redutor":  "MOTOR 5 CV 2 POLOS EXD W22",
+                 "serie":  "GM.21079",
+                 "codigoGold":  "GM.21079",
+                 "dataCriacao":  "2026-10-30",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
+                 "reducao":  ""
+             },
+    "6375":  {
+                 "os":  "6375",
+                 "cliente":  "OLEOPLAN RONDONIA INDUSTRIA DE BIOCOMBUSTIVEL LTDA",
+                 "redutor":  "MOTOR 12.5 CV 4 POLOS EXD W22",
+                 "serie":  "GM.21080",
+                 "codigoGold":  "GM.21080",
+                 "dataCriacao":  "2026-10-30",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "5845":  {
@@ -15693,7 +15715,7 @@
                  "codigoGold":  "GM.21033",
                  "dataCriacao":  "2026-10-09",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "5999":  {
