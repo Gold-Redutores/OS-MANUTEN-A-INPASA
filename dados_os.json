@@ -106,7 +106,7 @@
                  "codigoGold":  "GM.20988",
                  "dataCriacao":  "2026-09-21",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6249":  {
@@ -117,7 +117,7 @@
                  "codigoGold":  "GM.20990",
                  "dataCriacao":  "2026-09-21",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6250":  {
@@ -128,7 +128,7 @@
                  "codigoGold":  "GM.20995",
                  "dataCriacao":  "2026-09-21",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6268":  {
@@ -139,7 +139,7 @@
                  "codigoGold":  "GM.21008",
                  "dataCriacao":  "2026-09-28",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6308":  {
@@ -150,7 +150,7 @@
                  "codigoGold":  "GM.21036",
                  "dataCriacao":  "2026-10-16",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6339":  {
@@ -161,7 +161,7 @@
                  "codigoGold":  "GM.21054",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "MOTOR",
-                 "fase":  "Qualidade Revisada",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6229":  {
@@ -194,7 +194,7 @@
                  "codigoGold":  "GM.20970",
                  "dataCriacao":  "2026-09-01",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6232":  {
@@ -205,7 +205,7 @@
                  "codigoGold":  "GM.20971",
                  "dataCriacao":  "2026-09-01",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6246":  {
@@ -216,7 +216,7 @@
                  "codigoGold":  "GM.20986",
                  "dataCriacao":  "2026-09-21",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6247":  {
@@ -227,7 +227,7 @@
                  "codigoGold":  "GM.20987",
                  "dataCriacao":  "2026-09-21",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6191":  {
@@ -1888,7 +1888,7 @@
                  "codigoGold":  "GD.20296",
                  "dataCriacao":  "2026-10-20",
                  "classe":  "INVERSOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Orçamento Emitido",
                  "reducao":  ""
              },
     "6358":  {
@@ -2372,7 +2372,7 @@
                  "codigoGold":  "GM.21076",
                  "dataCriacao":  "2026-10-27",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Aprovado",
+                 "fase":  "Equipamento Entregue",
                  "reducao":  ""
              },
     "6218":  {
@@ -3033,6 +3033,17 @@
                  "dataCriacao":  "2026-07-24",
                  "classe":  "MOTOR",
                  "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "6376":  {
+                 "os":  "6376",
+                 "cliente":  "CARGILL AGRICOLA S A",
+                 "redutor":  "MOTOR 25 CV 4 POLOS WEG",
+                 "serie":  "GM.21081",
+                 "codigoGold":  "GM.21081",
+                 "dataCriacao":  "2026-11-03",
+                 "classe":  "MOTOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "5561":  {
@@ -7179,7 +7190,7 @@
                  "codigoGold":  "GD.20287",
                  "dataCriacao":  "2026-09-29",
                  "classe":  "DRIVE",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6273":  {
@@ -7190,7 +7201,7 @@
                  "codigoGold":  "GD.20286",
                  "dataCriacao":  "2026-09-28",
                  "classe":  "DRIVE",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6182":  {
@@ -7212,7 +7223,7 @@
                  "codigoGold":  "GD.20276",
                  "dataCriacao":  "2026-08-27",
                  "classe":  "DRIVE",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6265":  {
@@ -7927,7 +7938,7 @@
                  "codigoGold":  "GD.20289",
                  "dataCriacao":  "2026-10-01",
                  "classe":  "DRIVE",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "4957":  {
@@ -8148,6 +8159,17 @@
                  "dataCriacao":  "2025-05-22",
                  "classe":  "DRIVE",
                  "fase":  "Equipamento Entregue",
+                 "reducao":  ""
+             },
+    "6377":  {
+                 "os":  "6377",
+                 "cliente":  "GOLD GRUPO GERADORES LTDA",
+                 "redutor":  "ALTERNADOR 542 CV",
+                 "serie":  "GO.20024",
+                 "codigoGold":  "GO.20024",
+                 "dataCriacao":  "2026-11-03",
+                 "classe":  "ALTERNADOR",
+                 "fase":  "Aguardando Análise",
                  "reducao":  ""
              },
     "5313":  {
@@ -11623,7 +11645,7 @@
                  "codigoGold":  "GM.20999",
                  "dataCriacao":  "2026-09-25",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Qualidade Revisada",
                  "reducao":  ""
              },
     "4918":  {
@@ -12096,7 +12118,7 @@
                  "codigoGold":  "GM.21074",
                  "dataCriacao":  "2026-10-24",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6167":  {
@@ -12140,7 +12162,7 @@
                  "codigoGold":  "GM.21071",
                  "dataCriacao":  "2026-10-24",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6367":  {
@@ -12151,7 +12173,7 @@
                  "codigoGold":  "GM.21072",
                  "dataCriacao":  "2026-10-24",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "6368":  {
@@ -12162,7 +12184,7 @@
                  "codigoGold":  "GM.21073",
                  "dataCriacao":  "2026-10-24",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "5458":  {
@@ -14318,7 +14340,7 @@
                  "codigoGold":  "GM.21077",
                  "dataCriacao":  "2026-10-27",
                  "classe":  "MOTOR",
-                 "fase":  "Aguardando Análise",
+                 "fase":  "Conclusão da Análise",
                  "reducao":  ""
              },
     "5797":  {
@@ -15704,7 +15726,7 @@
                  "codigoGold":  "GM.21032",
                  "dataCriacao":  "2026-10-09",
                  "classe":  "MOTOR",
-                 "fase":  "Orçamento Emitido",
+                 "fase":  "Orçamento Aprovado",
                  "reducao":  ""
              },
     "6305":  {
