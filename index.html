@@ -2,17 +2,23 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Relatório de Manutenção - Gold Redutores</title>
+    <title>Relatório de Atendimento Técnico - Gold Redutores</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; color: #003366; background-color: #fff; }
-        .header { text-align: center; border-bottom: 3px solid #ed1c24; padding-bottom: 10px; margin-bottom: 10px; }
-        .header h2 { margin: 0; font-size: 24px; text-transform: uppercase; }
+        .header { display: grid; grid-template-columns: 130px minmax(0, 1fr) 130px; align-items: center; border-bottom: 3px solid #ed1c24; padding-bottom: 10px; margin-bottom: 10px; }
+        .header-logo { grid-column: 1; grid-row: 1 / span 2; display: block; width: 120px; height: auto; }
+        .header h2 { grid-column: 2; grid-row: 1; margin: 0; font-size: 24px; text-align: center; text-transform: uppercase; }
+        .header-os { grid-column: 2; grid-row: 2; margin-top: 10px; text-align: center; }
         .section { background: #d9d9d9; padding: 6px; margin-top: 15px; font-weight: bold; text-align: center; border: 1px solid #333; text-transform: uppercase; font-size: 13px; }
         table { width: 100%; border-collapse: collapse; table-layout: fixed; margin-bottom: 0; }
         table, th, td { border: 1px solid #333; }
         td { padding: 6px; font-size: 11px; vertical-align: middle; }
         th { background: #eee; padding: 8px; font-size: 11px; text-align: center; color: #003366; }
         input[type="text"], input[type="number"], input[type="time"], textarea { width: 98%; border: none; outline: none; background: transparent; font-size: 11px; color: #000; }
+        .descricao-servico { box-sizing: border-box; display: block; width: 100%; min-height: 14px; padding: 0; resize: none; overflow: hidden; white-space: pre-wrap; overflow-wrap: anywhere; }
+        .data-servico { box-sizing: border-box; width: 100%; min-width: 0; border: none; outline: none; background: transparent; font-size: 11px; color: #000; padding: 0; }
+        .tempo-almoco { box-sizing: border-box; width: 100%; min-width: 0; margin: 0; padding: 0; text-align: center; }
+        .tempo-almoco-impressao { display: none; text-align: center; color: #000; }
         
         .checkbox-container { display: flex; align-items: center; gap: 5px; cursor: pointer; }
         .checkbox-container input { width: auto; margin: 0; }
@@ -44,99 +50,110 @@
             .no-print { display: none !important; } 
             body { padding: 0; margin: 0; } 
             .signature-pad { border: none; }
+            .tempo-almoco { display: none !important; }
+            .tempo-almoco-impressao { display: inline !important; }
         }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h2>RELATÓRIO DE MANUTENÇÃO PREVENTIVA</h2>
-        <div style="margin-top: 10px;">
+        <img class="header-logo" src="https://i.ibb.co/zWgjxdtj/logo.png" alt="Logo Gold Redutores">
+        <h2>RELATÓRIO DE ATENDIMENTO TÉCNICO</h2>
+        <!--
+        <div class="header-os">
             <label style="font-weight: bold;">Nº ORDEM DE SERVIÇO: </label>
-            <input type="text" id="input-os" style="width: 150px; border-bottom: 2px solid #ed1c24; text-align: center; font-weight: bold; font-size: 18px;" placeholder="Ex: 5449" oninput="buscarDadosOS()">
-        </div>
-    </div>
-
-    <div class="no-print" style="text-align: center;">
-        <span id="db-status" style="font-size: 12px; font-weight: bold; color: orange;">⏳ Sincronizando com GitHub...</span>
+            <input type="text" id="input-os" style="width: 150px; border-bottom: 2px solid #ed1c24; text-align: center; font-weight: bold; font-size: 18px;" placeholder="Ex: 5449">
+            <small style="display: block; margin-top: 5px;">A OS é usada somente como referência. Os dados do cliente e equipamento devem ser preenchidos manualmente.</small>
+        </div> -->
     </div>
 
     <div class="section">DADOS DO CLIENTE E EQUIPAMENTO</div>
     <table>
         <tr>
-            <td colspan="2"><label><strong>Cliente:</strong></label> <input type="text" id="campo-cliente"></td>
-            <td colspan="2"><label><strong>Data de Criação:</strong></label> <span id="campo-data-criacao" style="font-weight: bold;"></span></td>
+            <td colspan="2"><label><strong>Cliente:</strong></label> <input type="text" id="campo-cliente" placeholder="Ex: Gold Maquinas"></td>
+            <!--
+            <td colspan="2"><label><strong>Data do Serviço:</strong></label> <input type="text" class="data-servico" inputmode="numeric" maxlength="10" aria-label="Data do Serviço, dia, mês e ano"></td>
+            -->
+            <td colspan="2"><label><strong>Nº OS:</strong></label> <input type="text" id="campo-os" placeholder="Ex: 002"></td>
         </tr>
+
         <tr>
-            <td><label><strong>Equipamento:</strong></label> <input type="text" id="campo-redutor"></td>
-            <td><label><strong>Redução:</strong></label> <input type="text" id="campo-reducao" placeholder="Ex: 1:40"></td>
-            <td colspan="2"><label><strong>Série / Cód Gold:</strong></label> <input type="text" id="campo-serie"></td>
+            <td colspan="2"><label><strong>Contato:</strong></label> <input type="text" id="campo-CONTATO" placeholder="Ex: Danilo"></td>
+            <td colspan="2"><label><strong>E-mail:</strong></label> <input type="text" id="campo-E-MAIL" placeholder="Ex: danilo@goldredutores.com.br"></td>
+        </tr>
+
+        
+        <tr>
+            <td colspan="2"><label><strong>Equipamento:</strong></label> <input type="text" id="campo-redutor"></td>
+            <!--
+            <td><label><strong>Redução:</strong></label> <input type="text" id="campo-reducao" placeholder="Ex: 1:40"></td> 
+            -->
+            <td colspan="2"><label><strong>Série:</strong></label> <input type="text" id="campo-serie"></td>
         </tr>
     </table>
 
-    <div class="section">ANÁLISES FOTOGRÁFICAS</div>
+    <div class="section">MOTIVO DO ATENDIMENTO</div>
+    <textarea id="conclusoes" rows="3" style="width: 100%; border: 1px solid #333; margin-top: 5px; padding: 8px;" placeholder="INSPEÇÃO POR NDT  NAS ÁREAS ACESSÍVEIS..."></textarea>
+
+    <div class="section">RELATÓRIO FOTOGRAFICO</div>
     <div class="foto-upload-container no-print">
         <label style="font-weight: bold; display: block; margin-bottom: 5px;">📸 ADICIONAR FOTOS</label>
         <input type="file" accept="image/*" multiple onchange="previewFotos(event)">
     </div>
     <div id="container-fotos" class="foto-container"></div>
 
-    <div class="section">PEÇAS NECESSÁRIAS PARA EXECUÇÃO</div>
-    <table>
-        <thead>
-            <tr>
-                <th style="width: 85%;">Descrição da Peça (Busca Global: termo % termo)</th>
-                <th style="width: 15%;">Qtd</th>
-            </tr>
-        </thead>
-        <tbody id="tabela-pecas"></tbody>
-    </table>
+<!-- MAO DE OBRA -->
 
     <div class="section">RESUMO DE MÃO DE OBRA</div>
     <table id="tabela-mao-obra">
         <thead>
             <tr>
-                <th style="width: 46%;">Descrição do Serviço</th>
-                <th style="width: 18%;">Hora Início</th>
-                <th style="width: 18%;">Hora Final</th>
-                <th style="width: 18%;">Total Gasto</th>
+                <th style="width: 50%;">Descrição do Serviço</th>
+                <th style="width: 12%;">Data</th>
+                <th style="width: 9%;">Hora Inicio</th>
+                <th style="width: 9%;">Hora Final</th>
+                <th style="width: 10%;">ALMOÇO</th>
+                <th style="width: 10%;">Total Gasto</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>DESMONTAGEM DO EQUIPAMENTO</td>
+                <td><label><strong>Serviço 1:</strong></label> <textarea class="descricao-servico" rows="1" placeholder="EX: Descreva a atividade realizada"></textarea></td>
+                <td><input type="text" class="data-servico" inputmode="numeric" maxlength="10" aria-label="Data do serviço, dia, mês e ano" style="text-align: center;"></td>
                 <td><input type="time" class="hr-inicio" onchange="calcularTempoLinha(this)"></td>
                 <td><input type="time" class="hr-fim" onchange="calcularTempoLinha(this)"></td>
+                <td><input type="text" class="tempo-almoco" inputmode="numeric" maxlength="5" aria-label="Duração do almoço em horas e minutos, formato HH:MM" oninput="formatarEntradaAlmoco(this)" onchange="calcularTempoLinha(this)"><span class="tempo-almoco-impressao"></span></td>
                 <td class="tempo-total" style="text-align: center; font-weight: bold; color: #ed1c24;">00:00</td>
             </tr>
             <tr>
-                <td>DESCONTAMINACAO DE PECAS</td>
+                <td><label><strong>Serviço 3:</strong></label> <textarea class="descricao-servico" rows="1" placeholder="Ex: Descreva a atividade realizada"></textarea></td>
+                <td><input type="text" class="data-servico" inputmode="numeric" maxlength="10" aria-label="Data do serviço, dia, mês e ano" style="text-align: center;"></td>
                 <td><input type="time" class="hr-inicio" onchange="calcularTempoLinha(this)"></td>
                 <td><input type="time" class="hr-fim" onchange="calcularTempoLinha(this)"></td>
+                <td><input type="text" class="tempo-almoco" inputmode="numeric" maxlength="5" aria-label="Duração do almoço em horas e minutos, formato HH:MM" oninput="formatarEntradaAlmoco(this)" onchange="calcularTempoLinha(this)"><span class="tempo-almoco-impressao"></span></td>
                 <td class="tempo-total" style="text-align: center; font-weight: bold; color: #ed1c24;">00:00</td>
             </tr>
             <tr>
-                <td>ANALISE E PERITAGEM EM PECAS</td>
+                <td><label><strong>Serviço 4:</strong></label> <textarea class="descricao-servico" rows="1" placeholder="Ex: Descreva a atividade realizada"></textarea></td>
+                <td><input type="text" class="data-servico" inputmode="numeric" maxlength="10" aria-label="Data do serviço, dia, mês e ano" style="text-align: center;"></td>
                 <td><input type="time" class="hr-inicio" onchange="calcularTempoLinha(this)"></td>
                 <td><input type="time" class="hr-fim" onchange="calcularTempoLinha(this)"></td>
+                <td><input type="text" class="tempo-almoco" inputmode="numeric" maxlength="5" aria-label="Duração do almoço em horas e minutos, formato HH:MM" oninput="formatarEntradaAlmoco(this)" onchange="calcularTempoLinha(this)"><span class="tempo-almoco-impressao"></span></td>
                 <td class="tempo-total" style="text-align: center; font-weight: bold; color: #ed1c24;">00:00</td>
             </tr>
             <tr>
-                <td>MONTAGEM E AJUSTE DE FOLGAS</td>
+                <td><label><strong>Serviço 5:</strong></label> <textarea class="descricao-servico" rows="1" placeholder="Ex: Descreva a atividade realizada"></textarea></td>
+                <td><input type="text" class="data-servico" inputmode="numeric" maxlength="10" aria-label="Data do serviço, dia, mês e ano" style="text-align: center;"></td>
                 <td><input type="time" class="hr-inicio" onchange="calcularTempoLinha(this)"></td>
                 <td><input type="time" class="hr-fim" onchange="calcularTempoLinha(this)"></td>
-                <td class="tempo-total" style="text-align: center; font-weight: bold; color: #ed1c24;">00:00</td>
-            </tr>
-            <tr>
-                <td>TESTES FINAIS DO EQUIPAMENTO</td>
-                <td><input type="time" class="hr-inicio" onchange="calcularTempoLinha(this)"></td>
-                <td><input type="time" class="hr-fim" onchange="calcularTempoLinha(this)"></td>
+                <td><input type="text" class="tempo-almoco" inputmode="numeric" maxlength="5" aria-label="Duração do almoço em horas e minutos, formato HH:MM" oninput="formatarEntradaAlmoco(this)" onchange="calcularTempoLinha(this)"><span class="tempo-almoco-impressao"></span></td>
                 <td class="tempo-total" style="text-align: center; font-weight: bold; color: #ed1c24;">00:00</td>
             </tr>
         </tbody>
         <tfoot>
             <tr style="background: #f2f2f2;">
-                <td colspan="3" style="text-align: right; font-weight: bold; padding-right: 15px;">TEMPO TOTAL UTILIZADO NO SERVIÇO:</td>
+                <td colspan="5" style="text-align: right; font-weight: bold; padding-right: 15px;">TEMPO TOTAL UTILIZADO NO SERVIÇO:</td>
                 <td id="soma-tempo-total" style="text-align: center; font-weight: bold; color: #ed1c24; font-size: 13px;">00:00</td>
             </tr>
         </tfoot>
@@ -144,6 +161,9 @@
 
     <div class="section">CONCLUSÕES</div>
     <textarea id="conclusoes" rows="5" style="width: 100%; border: 1px solid #333; margin-top: 5px; padding: 8px;" placeholder="Parecer técnico final..."></textarea>
+
+
+<!-- ASSINATURA -->
 
     <div style="margin-top: 30px;">
         <table style="border: none;">
@@ -158,6 +178,8 @@
                         <div style="border-top: 1px solid #333; margin-top: 5px; font-size: 10px; font-weight: bold; padding: 5px;">ASSINATURA DO TÉCNICO RESPONSÁVEL</div>
                     </div>
                 </td>
+                
+                
                 <td style="border: 1px solid #333; padding: 0; background: #fafafa;">
                     <div style="text-align: center; padding: 10px;">
                         <input type="text" class="name-input" placeholder="NOME DO RESPONSÁVEL (LEGÍVEL)">
@@ -168,7 +190,9 @@
                         <div style="border-top: 1px solid #333; margin-top: 5px; font-size: 10px; font-weight: bold; padding: 5px;">ASSINATURA DO RESPONSÁVEL DA EMPRESA</div>
                     </div>
                 </td>
+                
             </tr>
+           <!--
             <tr>
                 <td colspan="2" style="border: 1px solid #333; padding: 0; background: #fafafa;">
                     <div style="text-align: center; padding: 10px;">
@@ -181,216 +205,85 @@
                     </div>
                 </td>
             </tr>
+            -->
+
         </table>
     </div>
 
+<!-- BOTOES DE SALVAR, ENVIAR E IMPRIMIR -->
+
     <div class="btn-group no-print">
-        <button class="btn-action" style="background: #003366;" onclick="salvarHTML()">SALVAR ARQUIVO (.HTML)</button>
-        <button class="btn-action" style="background: #25d366;" onclick="enviarWhatsApp()">ENVIAR WHATSAPP</button>
-        <button class="btn-action" style="background: #ed1c24;" onclick="window.print()">GERAR PDF / IMPRIMIR</button>
+        <button class="btn-action" style="background: #087f5b;" onclick="salvarAndamento()">SALVAR ANDAMENTO</button>
+        <button class="btn-action" style="background: #495057;" onclick="document.getElementById('arquivo-andamento').click()">CARREGAR ANDAMENTO</button>
+      <!--  <button class="btn-action" style="background: #25d366;" onclick="enviarWhatsApp()">ENVIAR WHATSAPP</button>-->
+        <button class="btn-action" style="background: #ed1c24;" onclick="imprimirRelatorio()">GERAR PDF / IMPRIMIR</button>
     </div>
+    <input type="file" id="arquivo-andamento" class="no-print" accept=".json,application/json" hidden onchange="carregarAndamento(event)">
+    <p class="no-print" style="text-align: center; font-size: 12px;">Salve o andamento em um arquivo JSON e carregue esse arquivo para continuar editando em outro momento.</p>
+    <div id="status-andamento" class="no-print" role="status" aria-live="polite" style="text-align: center; font-size: 12px;"></div>
 
     <script>
-        // URLs das fontes de dados com Timestamp para evitar cache do GitHub
-        const URL_JSON_OS = 'https://raw.githubusercontent.com/Gold-Redutores/OS-MANUTEN-A-INPASA/main/dados_os.json';
-        const URL_CSV_OS_BACKUP = 'https://raw.githubusercontent.com/Gold-Redutores/PRENCHIMENTO-OS-GOLD/main/dmsoser00000045.csv';
-        const URL_CSV_PRODUTOS = 'https://raw.githubusercontent.com/Gold-Redutores/OS-MANUTEN-A-INPASA/main/relalisatagemprodutosdetada.csv';
-        
-        let dadosOS = {}; 
-        let listaProdutos = [];
+               
+        /*
+         * Fontes de dados da OS e dos produtos, mantidas apenas como observação.
+         * Não há consulta automática nem preenchimento dos campos:
+         * https://raw.githubusercontent.com/Gold-Redutores/OS-MANUTEN-A-INPASA/main/dados_os.json
+         * https://raw.githubusercontent.com/Gold-Redutores/PRENCHIMENTO-OS-GOLD/main/dmsoser00000045.csv
+         * https://raw.githubusercontent.com/Gold-Redutores/OS-MANUTEN-A-INPASA/main/relalisatagemprodutosdetada.csv
+         */
 
-        function parseCSV(text) {
-            return text.split(/\r?\n/).map(linha => {
-                return linha.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(c => {
-                    const valor = c.trim();
-                    const semAspas = valor.startsWith('"') && valor.endsWith('"')
-                        ? valor.slice(1, -1).replace(/""/g, '"')
-                        : valor;
-                    return semAspas.trim();
-                });
-            }).filter(l => l.length > 5);
-        }
-
-        async function carregarDados() {
-            const status = document.getElementById('db-status');
-            const timestamp = Date.now();
-            try {
-                // 1. Tenta carregar o JSON rápido da tabela BASE
-                try {
-                    const resJSON = await fetch(`${URL_JSON_OS}?t=${timestamp}`);
-                    if (resJSON.ok) {
-                        dadosOS = await resJSON.json();
-                        console.log("Dados carregados via JSON otimizado:", Object.keys(dadosOS).length, "registros.");
-                    }
-                } catch (eJSON) {
-                    console.warn("JSON não disponível, buscando CSV backup...", eJSON);
-                }
-
-                // 2. Se JSON não veio, carrega o CSV de backup
-                if (!dadosOS || Object.keys(dadosOS).length === 0) {
-                    const resCSV = await fetch(`${URL_CSV_OS_BACKUP}?t=${timestamp}`);
-                    if (!resCSV.ok) throw new Error(`Falha ao carregar CSV: HTTP ${resCSV.status}`);
-                    const arrayCSV = parseCSV(await resCSV.text());
-                    dadosOS = {};
-                    arrayCSV.forEach(l => {
-                        const os = (l[21] || "").trim();
-                        if (os) {
-                            dadosOS[os] = {
-                                os: os,
-                                serie: l[23] || "",
-                                redutor: l[24] || "",
-                                cliente: l[26] || ""
-                            };
-                        }
-                    });
-                }
-
-                if (Object.keys(dadosOS).length === 0) {
-                    throw new Error("Nenhuma ordem de serviço foi carregada.");
-                }
-
-                // 3. Carrega a lista de peças/produtos para busca global
-                try {
-                    const resProd = await fetch(`${URL_CSV_PRODUTOS}?t=${timestamp}`);
-                    listaProdutos = parseCSV(await resProd.text());
-                } catch(eProd) {
-                    console.warn("Produtos não carregados:", eProd);
-                }
-
-                buscarDadosOS();
-                status.innerText = "✅ Sincronizado com Sucesso!";
-                status.style.color = "green";
-            } catch (e) {
-                status.innerText = "❌ Erro na sincronização.";
-                status.style.color = "red";
-                console.error(e);
-            }
-        }
-
-        function formatarDataCriacao(valor) {
-            const correspondencia = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(valor || "").trim());
-            return correspondencia
-                ? `${correspondencia[3]}/${correspondencia[2]}/${correspondencia[1]}`
-                : String(valor || "");
-        }
-
-        function buscarDadosOS() {
-            const osVal = document.getElementById('input-os').value.trim();
-            const item = osVal.length >= 3 ? dadosOS[osVal] : null;
-            const campos = {
-                cliente: document.getElementById('campo-cliente'),
-                redutor: document.getElementById('campo-redutor'),
-                codigoGold: document.getElementById('campo-serie'),
-                reducao: document.getElementById('campo-reducao')
-            };
-            const codigoGold = item && Object.prototype.hasOwnProperty.call(item, 'codigoGold')
-                ? item.codigoGold ?? ""
-                : item?.serie ?? "";
-
-            Object.entries(campos).forEach(([campo, input]) => {
-                const valor = campo === 'codigoGold'
-                    ? codigoGold
-                    : item?.[campo] ?? "";
-                input.value = valor;
-                input.setAttribute('value', input.value);
-            });
-
-            document.getElementById('campo-data-criacao').innerText = formatarDataCriacao(item?.dataCriacao);
-        }
-
-        function criarLinhaPeca() {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td class="autocomplete-wrapper">
-                    <input type="text" class="input-nome-peca" placeholder="Busca global de peças...">
-                    <div class="suggestions"></div>
-                </td>
-                <td><input type="number" value="1" style="text-align:center;" oninput="this.setAttribute('value', this.value)"></td>
-            `;
-            const input = tr.querySelector('.input-nome-peca');
-            const sugestoes = tr.querySelector('.suggestions');
-            let focusedIndex = -1;
-
-            input.addEventListener('input', function() {
-                const busca = this.value.toLowerCase();
-                sugestoes.innerHTML = '';
-                focusedIndex = -1;
-
-                if (busca.length < 2) { sugestoes.style.display = 'none'; return; }
-                const termos = busca.split('%').map(t => t.trim()).filter(t => t !== "");
-                
-                const filtrados = listaProdutos.filter(p => {
-                    const linhaToda = p.join(" ").toLowerCase();
-                    return termos.every(t => linhaToda.includes(t));
-                }).slice(0, 15);
-
-                if (filtrados.length > 0) {
-                    sugestoes.style.display = 'block';
-                    filtrados.forEach(p => {
-                        const div = document.createElement('div');
-                        div.className = 'suggestion-item';
-                        div.innerText = p[22] || p[0] || ""; 
-                        div.onclick = () => selecionarSugestao(div.innerText, tr);
-                        sugestoes.appendChild(div);
-                    });
-                } else { sugestoes.style.display = 'none'; }
-            });
-
-            input.addEventListener('keydown', function(e) {
-                const items = sugestoes.querySelectorAll('.suggestion-item');
-                if (!items.length) return;
-
-                if (e.key === 'ArrowDown') {
-                    focusedIndex = (focusedIndex + 1) % items.length;
-                    atualizarSelecaoTeclado(items);
-                    e.preventDefault();
-                } else if (e.key === 'ArrowUp') {
-                    focusedIndex = (focusedIndex - 1 + items.length) % items.length;
-                    atualizarSelecaoTeclado(items);
-                    e.preventDefault();
-                } else if (e.key === 'Enter' && focusedIndex > -1) {
-                    items[focusedIndex].click();
-                    e.preventDefault();
-                }
-            });
-
-            function atualizarSelecaoTeclado(items) {
-                items.forEach((item, index) => {
-                    if (index === focusedIndex) {
-                        item.classList.add('selected');
-                        item.scrollIntoView({ block: 'nearest' });
-                    } else {
-                        item.classList.remove('selected');
-                    }
-                });
-            }
-
-            function selecionarSugestao(texto, linhaAtual) {
-                input.value = texto; 
-                input.setAttribute('value', texto);
-                sugestoes.style.display = 'none';
-                const todasLinhas = document.querySelectorAll('#tabela-pecas tr');
-                if (linhaAtual === todasLinhas[todasLinhas.length - 1]) criarLinhaPeca();
-            }
-
-            document.getElementById('tabela-pecas').appendChild(tr);
-        }
+        let leiturasFotosPendentes = 0;
 
         function previewFotos(e) {
             for (let f of e.target.files) {
                 const r = new FileReader();
                 r.onload = ev => {
-                    const d = document.createElement('div');
-                    d.className = 'foto-item';
-                    d.innerHTML = `
-                        <button class="btn-remove no-print" onclick="this.parentElement.remove()">X</button>
-                        <img src="${ev.target.result}" class="foto-preview">
-                        <textarea rows="3" placeholder="Parecer..." oninput="this.innerHTML = this.value"></textarea>
-                    `;
-                    document.getElementById('container-fotos').appendChild(d);
+                    adicionarFotoAoRelatorio(String(ev.target.result), '');
+                    leiturasFotosPendentes -= 1;
+                    atualizarStatusFotos();
                 };
+                r.onerror = () => {
+                    leiturasFotosPendentes -= 1;
+                    atualizarStatusFotos();
+                    alert(`Não foi possível ler a foto "${f.name}".`);
+                };
+                leiturasFotosPendentes += 1;
                 r.readAsDataURL(f);
             }
+            atualizarStatusFotos();
+            e.target.value = '';
+        }
+
+        function atualizarStatusFotos() {
+            if (leiturasFotosPendentes > 0) {
+                document.getElementById('status-andamento').textContent = `Carregando ${leiturasFotosPendentes} foto(s). Aguarde antes de salvar o andamento.`;
+            } else if (document.getElementById('status-andamento').textContent.startsWith('Carregando ')) {
+                document.getElementById('status-andamento').textContent = '';
+            }
+        }
+
+        function adicionarFotoAoRelatorio(src, parecer) {
+            const item = document.createElement('div');
+            item.className = 'foto-item';
+
+            const remover = document.createElement('button');
+            remover.className = 'btn-remove no-print';
+            remover.type = 'button';
+            remover.textContent = 'X';
+            remover.addEventListener('click', () => item.remove());
+
+            const imagem = document.createElement('img');
+            imagem.src = src;
+            imagem.className = 'foto-preview';
+            imagem.alt = 'Foto do relatório';
+
+            const descricao = document.createElement('textarea');
+            descricao.rows = 3;
+            descricao.placeholder = 'Parecer...';
+            descricao.value = parecer;
+
+            item.append(remover, imagem, descricao);
+            document.getElementById('container-fotos').appendChild(item);
         }
 
         function configurarAssinatura(id) {
@@ -433,18 +326,49 @@
             ctx.clearRect(0, 0, canvas.width, canvas.height);
         }
 
-        function calcularTempoLinha(elem) {
+        function formatarEntradaAlmoco(input) {
+            const numeros = input.value.replace(/\D/g, '').slice(0, 4);
+            input.value = numeros.length > 2
+                ? `${numeros.slice(0, 2)}:${numeros.slice(2)}`
+                : numeros;
+            input.setCustomValidity('');
+            atualizarAlmocoImpressao(input);
+        }
+
+        function atualizarAlmocoImpressao(input) {
+            const exibicao = input.parentElement.querySelector('.tempo-almoco-impressao');
+            exibicao.textContent = input.value;
+        }
+
+        function obterDuracaoAlmocoMinutos(input) {
+            if (!input.value.trim()) return 0;
+            const partes = /^(\d{2}):([0-5]\d)$/.exec(input.value);
+            return partes ? Number(partes[1]) * 60 + Number(partes[2]) : null;
+        }
+
+        function calcularTempoLinha(elem, exibirErro = true) {
             const tr = elem.closest('tr');
             const inicio = tr.querySelector('.hr-inicio');
             const fim = tr.querySelector('.hr-fim');
+            const almoco = tr.querySelector('.tempo-almoco');
             const totalDisplay = tr.querySelector('.tempo-total');
 
             inicio.setAttribute('value', inicio.value);
             fim.setAttribute('value', fim.value);
+            almoco.setAttribute('value', almoco.value);
+            atualizarAlmocoImpressao(almoco);
 
             if (inicio.value && fim.value) {
                 const [hIni, mIni] = inicio.value.split(':').map(Number);
                 const [hFim, mFim] = fim.value.split(':').map(Number);
+                const duracaoAlmoco = obterDuracaoAlmocoMinutos(almoco);
+                if (duracaoAlmoco === null) {
+                    almoco.setCustomValidity('Digite a duração do almoço como quatro números. Exemplo: 0100 para 01:00.');
+                    if (exibirErro) almoco.reportValidity();
+                    totalDisplay.innerText = '00:00';
+                    calcularSomaTotalHoras();
+                    return;
+                }
 
                 let minInicio = hIni * 60 + mIni;
                 let minFim = hFim * 60 + mFim;
@@ -454,15 +378,29 @@
                 }
 
                 const diff = minFim - minInicio;
-                const horas = Math.floor(diff / 60);
-                const minutos = diff % 60;
+                if (duracaoAlmoco > diff) {
+                    almoco.setCustomValidity('O tempo de almoço não pode ser maior que o período trabalhado.');
+                    if (exibirErro) almoco.reportValidity();
+                    totalDisplay.innerText = '00:00';
+                    calcularSomaTotalHoras();
+                    return;
+                }
 
-                totalDisplay.innerText = String(horas).padStart(2, '0') + ':' + String(minutos).padStart(2, '0');
+                almoco.setCustomValidity('');
+                const minutosLiquidos = diff - duracaoAlmoco;
+                totalDisplay.innerText = formatarDuracao(minutosLiquidos);
             } else {
+                almoco.setCustomValidity('');
                 totalDisplay.innerText = "00:00";
             }
 
             calcularSomaTotalHoras();
+        }
+
+        function formatarDuracao(totalMinutos) {
+            const horas = Math.floor(totalMinutos / 60);
+            const minutos = totalMinutos % 60;
+            return String(horas).padStart(2, '0') + ':' + String(minutos).padStart(2, '0');
         }
 
         function calcularSomaTotalHoras() {
@@ -477,51 +415,222 @@
                 }
             });
 
-            const horasTotais = Math.floor(totalMinutosServico / 60);
-            const minutosTotais = totalMinutosServico % 60;
-
-            document.getElementById('soma-tempo-total').innerText = 
-                String(horasTotais).padStart(2, '0') + ':' + String(minutosTotais).padStart(2, '0');
+            document.getElementById('soma-tempo-total').innerText = formatarDuracao(totalMinutosServico);
         }
 
-        function prepararHTML() {
-            document.querySelectorAll('input, textarea').forEach(i => {
-                if(i.type === "checkbox") {
-                    if(i.checked) i.setAttribute('checked', 'checked');
-                    else i.removeAttribute('checked');
-                } else {
-                    i.setAttribute('value', i.value);
-                    if(i.tagName === "TEXTAREA") i.innerHTML = i.value;
+        function formatarEntradaData(input) {
+            const numeros = input.value.replace(/\D/g, '').slice(0, 8);
+            input.value = numeros.length > 4
+                ? `${numeros.slice(0, 2)}/${numeros.slice(2, 4)}/${numeros.slice(4)}`
+                : numeros.length > 2
+                    ? `${numeros.slice(0, 2)}/${numeros.slice(2)}`
+                    : numeros;
+            input.setCustomValidity('');
+        }
+
+        function validarDataRelatorio(input) {
+            const valor = input.value.trim();
+            if (!valor) {
+                input.setCustomValidity('');
+                return true;
+            }
+
+            const partes = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(valor);
+            if (!partes) {
+                input.setCustomValidity('Informe a data no formato dd/mm/aaaa.');
+                return false;
+            }
+
+            const dia = Number(partes[1]);
+            const mes = Number(partes[2]);
+            const ano = Number(partes[3]);
+            const data = new Date(0);
+            data.setFullYear(ano, mes - 1, dia);
+            data.setHours(0, 0, 0, 0);
+            const valida = ano > 0
+                && data.getFullYear() === ano
+                && data.getMonth() === mes - 1
+                && data.getDate() === dia;
+
+            input.setCustomValidity(valida ? '' : 'Informe uma data válida no formato dd/mm/aaaa.');
+            return valida;
+        }
+
+        function validarDatasRelatorio() {
+            const camposData = document.querySelectorAll('.data-servico');
+            for (const campo of camposData) {
+                if (!validarDataRelatorio(campo)) {
+                    campo.reportValidity();
+                    campo.focus();
+                    return false;
                 }
-            });
-            return "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+            }
+            return true;
         }
 
-        function salvarHTML() {
-            const os = document.getElementById('input-os').value || "SN";
-            const cliente = document.getElementById('campo-cliente').value || "RELATORIO";
-            const blob = new Blob([prepararHTML()], { type: 'text/html' });
+        function validarTemposAlmoco() {
+            const camposAlmoco = document.querySelectorAll('.tempo-almoco');
+            for (const campo of camposAlmoco) {
+                if (obterDuracaoAlmocoMinutos(campo) === null || !campo.checkValidity()) {
+                    campo.setCustomValidity('Digite a duração do almoço como quatro números. Exemplo: 0100 para 01:00.');
+                    campo.reportValidity();
+                    campo.focus();
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function ajustarAlturaDescricao(textarea) {
+            textarea.style.height = 'auto';
+            textarea.style.height = `${textarea.scrollHeight}px`;
+        }
+
+        function capturarAndamento() {
+            return {
+                version: 1,
+                fields: Array.from(document.querySelectorAll('input:not([type="file"]), textarea')).map(campo => ({
+                    value: campo.value,
+                    checked: campo.type === 'checkbox' ? campo.checked : undefined
+                })),
+                photos: Array.from(document.querySelectorAll('#container-fotos .foto-item')).map(item => ({
+                    src: item.querySelector('.foto-preview').src,
+                    caption: item.querySelector('textarea').value
+                })),
+                signatures: Object.fromEntries(
+                    ['pad-tecnico', 'pad-empresa'].map(id => [id, document.getElementById(id).toDataURL('image/png')])
+                )
+            };
+        }
+
+        function nomeArquivoSeguro(valor, fallback) {
+            const nome = valor.trim().replace(/[<>:"\/\\|?*\x00-\x1F]/g, '_').replace(/[. ]+$/g, '');
+            return nome || fallback;
+        }
+
+        function salvarAndamento() {
+            if (leiturasFotosPendentes > 0) {
+                atualizarStatusFotos();
+                return;
+            }
+            const andamento = capturarAndamento();
+            const arquivo = new Blob([JSON.stringify(andamento)], { type: 'application/json' });
             const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = `OS_${os}_${cliente}.html`;
+            link.href = URL.createObjectURL(arquivo);
+            const os = nomeArquivoSeguro(document.getElementById('campo-os').value, 'sem-os');
+            link.download = `OS_${os}_andamento.json`;
             link.click();
+            setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+            document.getElementById('status-andamento').textContent = 'Andamento salvo. Guarde o arquivo JSON para carregar e continuar depois.';
+        }
+
+        function validarAndamento(andamento) {
+            if (!andamento || andamento.version !== 1 || !Array.isArray(andamento.fields)
+                || !Array.isArray(andamento.photos) || !andamento.signatures
+                || typeof andamento.signatures !== 'object') {
+                throw new Error('O arquivo selecionado não tem um formato de andamento reconhecido.');
+            }
+
+            if (!andamento.fields.every(campo => campo && typeof campo.value === 'string'
+                && (campo.checked === undefined || typeof campo.checked === 'boolean'))) {
+                throw new Error('O arquivo contém campos inválidos ou incompatíveis.');
+            }
+
+            const imagemValida = valor => typeof valor === 'string'
+                && /^data:image\/[A-Za-z0-9.+-]+;base64,[A-Za-z0-9+/]+=*$/.test(valor);
+            if (!andamento.photos.every(foto => foto && imagemValida(foto.src) && typeof foto.caption === 'string')) {
+                throw new Error('O arquivo contém fotos inválidas ou incompatíveis.');
+            }
+
+            for (const id of ['pad-tecnico', 'pad-empresa']) {
+                if (!imagemValida(andamento.signatures[id])) {
+                    throw new Error('O arquivo não contém as assinaturas válidas do relatório.');
+                }
+            }
+
+            const quantidadeFotosAtuais = document.querySelectorAll('#container-fotos .foto-item').length;
+            const quantidadeCamposFixos = document.querySelectorAll('input:not([type="file"]), textarea').length
+                - quantidadeFotosAtuais;
+            if (andamento.fields.length !== quantidadeCamposFixos + andamento.photos.length) {
+                throw new Error('A estrutura deste relatório é diferente da estrutura usada para salvar o arquivo.');
+            }
+        }
+
+        async function restaurarAssinatura(id, src) {
+            const imagem = new Image();
+            await new Promise((resolve, reject) => {
+                imagem.onload = resolve;
+                imagem.onerror = () => reject(new Error(`Não foi possível restaurar a assinatura ${id}.`));
+                imagem.src = src;
+            });
+
+            const canvas = document.getElementById(id);
+            const contexto = canvas.getContext('2d');
+            contexto.clearRect(0, 0, canvas.width, canvas.height);
+            contexto.drawImage(imagem, 0, 0, canvas.width, canvas.height);
+        }
+
+        async function carregarAndamento(event) {
+            const arquivo = event.target.files[0];
+            event.target.value = '';
+            if (!arquivo) return;
+            if (leiturasFotosPendentes > 0) {
+                atualizarStatusFotos();
+                return;
+            }
+
+            try {
+                const andamento = JSON.parse(await arquivo.text());
+                validarAndamento(andamento);
+
+                const fotos = document.getElementById('container-fotos');
+                fotos.replaceChildren();
+                andamento.photos.forEach(foto => adicionarFotoAoRelatorio(foto.src, foto.caption));
+
+                const campos = document.querySelectorAll('input:not([type="file"]), textarea');
+                andamento.fields.forEach((salvo, indice) => {
+                    const campo = campos[indice];
+                    campo.value = salvo.value;
+                    if (campo.type === 'checkbox') campo.checked = salvo.checked;
+                    if (campo.classList.contains('tempo-almoco')) atualizarAlmocoImpressao(campo);
+                });
+
+                document.querySelectorAll('#tabela-mao-obra tbody tr').forEach(linha => {
+                    calcularTempoLinha(linha.querySelector('.hr-inicio'), false);
+                });
+                document.querySelectorAll('.descricao-servico').forEach(ajustarAlturaDescricao);
+                await Promise.all(['pad-tecnico', 'pad-empresa'].map(id => restaurarAssinatura(id, andamento.signatures[id])));
+
+                document.getElementById('status-andamento').textContent = `Andamento carregado de "${arquivo.name}". Você pode continuar editando.`;
+            } catch (erro) {
+                document.getElementById('status-andamento').textContent = `Erro ao carregar andamento: ${erro.message}`;
+            }
         }
 
         function enviarWhatsApp() {
             alert("Instrução: Clique em 'GERAR PDF', salve o arquivo e anexe no WhatsApp do cliente.");
         }
 
+        function imprimirRelatorio() {
+            if (validarDatasRelatorio() && validarTemposAlmoco()) {
+                document.querySelectorAll('.tempo-almoco').forEach(atualizarAlmocoImpressao);
+                window.print();
+            }
+        }
+
         window.onload = () => {
-            carregarDados();
-            criarLinhaPeca();
-            setTimeout(() => {
-                configurarAssinatura('pad-tecnico');
-                configurarAssinatura('pad-empresa');
-                configurarAssinatura('pad-inpasa');
-            }, 200);
+            configurarAssinatura('pad-tecnico');
+            configurarAssinatura('pad-empresa');
+            document.querySelectorAll('.descricao-servico').forEach(textarea => {
+                textarea.addEventListener('input', () => ajustarAlturaDescricao(textarea));
+                ajustarAlturaDescricao(textarea);
+            });
+            document.querySelectorAll('.data-servico').forEach(campo => {
+                campo.addEventListener('input', () => formatarEntradaData(campo));
+                campo.addEventListener('blur', () => validarDataRelatorio(campo));
+            });
         };
 
-        window.onclick = e => { if (!e.target.matches('.input-nome-peca')) document.querySelectorAll('.suggestions').forEach(s => s.style.display = 'none'); }
     </script>
 </body>
 </html>
